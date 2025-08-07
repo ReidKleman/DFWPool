@@ -90,10 +90,31 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
     
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75" as="image">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Inline critical font-awesome icons -->
+    <style>
+        /* Critical Font Awesome icons inline */
+        @font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2) format("woff2")}
+        .fas{font-family:"Font Awesome 6 Free";font-weight:900}
+        .fa-tint:before{content:"\f043"}
+        .fa-swimming-pool:before{content:"\f5c5"}
+        .fa-vial:before{content:"\f492"}
+        .fa-tools:before{content:"\f7d9"}
+        .fa-leaf:before{content:"\f06c"}
+        .fa-certificate:before{content:"\f0a3"}
+        .fa-clock:before{content:"\f017"}
+        .fa-award:before{content:"\f559"}
+        .fa-phone-alt:before{content:"\f879"}
+        .fa-phone:before{content:"\f095"}
+    </style>
     
     <style>
         * {
@@ -1251,7 +1272,7 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
                     body: 'Page view: ' + window.location.hostname + '\nTime: ' + new Date().toLocaleString() + '\nReferrer: ' + (document.referrer || 'Direct') + '\nDevice: ' + (/Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? 'Mobile' : 'Desktop')
                 }).catch(() => {}); // Silent fail
             }
-        }, 2000); // Delay 2 seconds to not block initial render
+        }, 3000); // Delay 3 seconds to not block initial render
 
         // Header background on scroll
         window.addEventListener('scroll', function() {
@@ -1301,13 +1322,13 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
     </style>
     
     <script>
-        // Show mobile CTA after 10 seconds
+        // Show mobile CTA after 15 seconds (non-critical)
         setTimeout(() => {
             const mobileCTA = document.getElementById('mobile-cta');
             if (mobileCTA && window.innerWidth <= 768) {
                 mobileCTA.style.display = 'block';
             }
-        }, 10000);
+        }, 15000);
         
         // Flip card functionality - Mobile first with touch support
         function flipCard(card) {
@@ -1343,6 +1364,20 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
                     });
                 }
             }
+        });
+    </script>
+    
+    <!-- Load non-critical Font Awesome asynchronously -->
+    <script>
+        // Load full Font Awesome after page load (non-critical)
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+                link.crossOrigin = 'anonymous';
+                document.head.appendChild(link);
+            }, 1000);
         });
     </script>
 </body>
