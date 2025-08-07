@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFW Pool Patrol - Professional Pool Cleaning Dallas Fort Worth</title>
+    <title>DFW Pool Patrol - Connecting You with Top Pool Professionals Dallas Fort Worth</title>
     
-    <meta name="description" content="Professional pool cleaning services in Dallas Fort Worth. Licensed pool maintenance, chemical balancing, equipment repair. Call (762) 533-5458 for free estimate.">
+    <meta name="description" content="DFW Pool Patrol connects homeowners with vetted pool service professionals in Dallas Fort Worth. Get matched with licensed pool cleaners for maintenance, repairs, and more. Call (762) 533-5458.">
     <meta name="keywords" content="pool cleaning Dallas, pool service Fort Worth, pool maintenance DFW, chemical balancing, pool repair Dallas, weekly pool cleaning, pool cleaning near me, residential pool service, commercial pool cleaning, green pool treatment, pool equipment repair, pool opening closing">
     <meta name="author" content="DFW Pool Patrol">
     <meta name="robots" content="index, follow">
@@ -312,7 +312,7 @@
 
         /* Services Section - Mobile First */
         .services {
-            padding: 60px 0;
+            padding: 50px 0;
             background: #ffffff;
         }
 
@@ -344,8 +344,7 @@
 
         .service-card-flip {
             perspective: 1000px;
-            height: auto;
-            min-height: 120px;
+            height: 200px;
             cursor: pointer;
         }
 
@@ -373,13 +372,14 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
             border: 2px solid rgba(30, 64, 175, 0.1);
             backdrop-filter: blur(5px);
+            overflow: hidden;
         }
 
         .flip-card-front {
             display: flex;
             align-items: center;
             gap: 1rem;
-            padding: 1.25rem;
+            padding: 1.5rem;
             transition: all 0.3s;
         }
 
@@ -392,29 +392,37 @@
 
         .flip-card-back {
             transform: rotateY(180deg);
-            padding: 1.5rem;
+            padding: 1.25rem;
             text-align: left;
             overflow-y: auto;
+            line-height: 1.4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
         .flip-card-back h4 {
             color: #1e40af;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2;
         }
 
         .flip-card-back ul {
             list-style: none;
             padding: 0;
-            margin: 1rem 0;
+            margin: 0.5rem 0;
+            flex: 1;
         }
 
         .flip-card-back li {
-            padding: 0.25rem 0;
+            padding: 0.15rem 0;
             padding-left: 1rem;
             position: relative;
-            font-size: 0.9rem;
-            line-height: 1.4;
+            font-size: 0.8rem;
+            line-height: 1.3;
+            color: #64748b;
         }
 
         .flip-card-back li:before {
@@ -423,11 +431,19 @@
             font-weight: bold;
             position: absolute;
             left: 0;
+            font-size: 0.7rem;
+        }
+
+        .flip-card-back .service-areas {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #64748b;
+            line-height: 1.3;
         }
 
         .tap-hint {
             color: #94a3b8;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-style: italic;
             margin-top: 0.5rem;
             display: block;
@@ -464,115 +480,110 @@
 
         /* Features Section - Mobile First */
         .features {
-            padding: 60px 0;
-            background: linear-gradient(135deg, #dbeafe 0%, #f1f5f9 50%, #e2e8f0 100%);
-            color: #1e293b;
-            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
         }
 
         .features-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .feature-card {
-            background: #ffffff;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border: 1px solid rgba(30, 64, 175, 0.1);
-            transition: all 0.3s;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-            text-align: left;
-        }
-
-        .feature-card:hover {
-            background: #dbeafe;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.12);
-        }
-
-        .feature-card h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.75rem;
-            color: #1e40af;
-            font-weight: 600;
-            line-height: 1.3;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .feature-card h4 i {
-            font-size: 1rem;
-            color: white;
-            background: linear-gradient(135deg, #10b981, #059669);
-            padding: 0.5rem;
-            border-radius: 50%;
-            width: 2rem;
-            height: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 3px 8px rgba(16, 185, 129, 0.3);
-        }
-
-        .feature-card p {
-            color: #64748b;
-            line-height: 1.5;
-            font-size: 0.9rem;
-        }
-
-        /* Results Section - Mobile First */
-        .results {
-            padding: 60px 0;
-            background: #ffffff;
-        }
-
-        .results-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
             margin-top: 2rem;
         }
 
-        .result-card {
-            background: #ffffff;
+        .feature-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
             border-radius: 12px;
-            padding: 1.5rem;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid rgba(30, 64, 175, 0.1);
             transition: all 0.3s;
-            border: 1px solid #e2e8f0;
         }
 
-        .result-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
-            background: #dbeafe;
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
+            border-color: #1e40af;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Results Section - Mobile First */
+        .results {
+            padding: 50px 0;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            color: white;
+        }
+
+        .results .section-title {
+            color: white;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .result-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .result-number {
             font-size: 2.5rem;
             font-weight: 800;
-            color: #1e40af;
+            color: white;
             margin-bottom: 0.5rem;
-            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .result-label {
-            font-size: 1rem;
+        .result-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: white;
             font-weight: 600;
-            color: #3b82f6;
-            margin-bottom: 1rem;
-            line-height: 1.2;
         }
 
+        .result-item p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
 
         /* Contact Section - Mobile First */
         .contact {
-            padding: 60px 0;
+            padding: 50px 0;
             background: linear-gradient(135deg, #dbeafe 0%, #f1f5f9 50%, #e2e8f0 100%);
             color: #1e293b;
             text-align: center;
@@ -717,6 +728,10 @@
                 gap: 1.5rem;
             }
 
+            .service-card-flip {
+                height: 240px;
+            }
+
             .flip-card-front {
                 padding: 1.5rem;
             }
@@ -735,38 +750,13 @@
 
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-
-            .feature-card {
-                padding: 1.5rem;
-                text-align: left;
-            }
-
-            .feature-card h4 {
-                font-size: 1rem;
-            }
-
-            .feature-card p {
-                font-size: 0.9rem;
+                gap: 2rem;
             }
 
             .results-grid {
                 grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
             }
-
-            .result-card {
-                padding: 2rem;
-            }
-
-            .result-number {
-                font-size: 2.8rem;
-            }
-
-            .result-label {
-                font-size: 1.1rem;
-            }
-
 
             .form-group {
                 grid-template-columns: repeat(2, 1fr);
@@ -848,6 +838,10 @@
                 margin-top: 3rem;
             }
 
+            .service-card-flip {
+                height: 280px;
+            }
+
             .flip-card-front {
                 padding: 2rem;
                 flex-direction: row;
@@ -878,24 +872,8 @@
             }
 
             .features-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 gap: 2rem;
-                margin-top: 3rem;
-            }
-
-            .feature-card {
-                padding: 2rem;
-                text-align: center;
-            }
-
-            .feature-card h4 {
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
-            }
-
-            .feature-card p {
-                font-size: 0.95rem;
-                line-height: 1.5;
             }
 
             .results {
@@ -903,22 +881,17 @@
             }
 
             .results-grid {
-                margin-top: 3rem;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3rem;
             }
 
-            .result-card {
-                padding: 2.5rem 2rem;
+            .result-item {
+                padding: 2rem;
             }
 
             .result-number {
                 font-size: 3rem;
             }
-
-            .result-label {
-                font-size: 1.2rem;
-                margin-bottom: 1rem;
-            }
-
 
             .contact {
                 padding: 100px 0;
@@ -977,9 +950,9 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>Professional Pool Cleaning Service in Dallas Fort Worth</h1>
-            <div class="subtitle">Licensed • Insured • 3 Years Experience</div>
-            <p>Keep your pool crystal clear year-round with DFW Pool Patrol's reliable maintenance service. Serving Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Garland, Mesquite, Richardson, Carrollton, Lewisville, Allen, and surrounding DFW Metroplex areas with weekly cleaning, chemical balancing, and equipment repair.</p>
+            <h1>Your Trusted Pool Service Connection in Dallas Fort Worth</h1>
+            <div class="subtitle">Fast Response • Expert Care • DFW Wide</div>
+            <p>DFW Pool Patrol connects you with the best pool service professionals in your area. We match homeowners throughout Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Garland, Mesquite, Richardson, Carrollton, Lewisville, Allen, and surrounding DFW Metroplex areas with licensed, insured pool experts for weekly cleaning, chemical balancing, and equipment repair.</p>
             <a href="#contact" class="cta-button">Get Free Estimate</a>
             
             <div class="phone-widget">
@@ -991,8 +964,8 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title fade-in">Pool Services in Dallas Fort Worth Metroplex</h2>
-            <p class="services-intro fade-in">Professional pool maintenance services for residential and commercial properties throughout DFW. Click each service to learn more about our comprehensive pool care solutions.</p>
+            <h2 class="section-title fade-in">Pool Services We Connect You With</h2>
+            <p class="services-intro fade-in">Professional pool maintenance for residential and commercial properties throughout DFW. We connect you with the best pool professionals for all your needs.</p>
             <div class="services-list">
                 <div class="service-card-flip fade-in" onclick="flipCard(this)">
                     <div class="flip-card-inner">
@@ -1000,22 +973,21 @@
                             <span class="service-icon"><i class="fas fa-swimming-pool"></i></span>
                             <div>
                                 <h4>Weekly Pool Cleaning</h4>
-                                <p>Complete pool maintenance service</p>
+                                <p>Connect with maintenance experts</p>
                                 <small class="tap-hint">Tap for details</small>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h4>Weekly Pool Cleaning in DFW</h4>
-                            <p><strong>Comprehensive weekly pool maintenance including:</strong></p>
+                            <h4>Weekly Pool Maintenance</h4>
                             <ul>
                                 <li>Surface skimming and debris removal</li>
                                 <li>Vacuuming pool floor and walls</li>
                                 <li>Brushing tile line and pool surfaces</li>
                                 <li>Emptying skimmer and pump baskets</li>
-                                <li>Cleaning pool equipment area</li>
-                                <li>Basic water level adjustment</li>
+                                <li>Equipment area cleaning and inspection</li>
+                                <li>Water level adjustment as needed</li>
                             </ul>
-                            <p><strong>Service Areas:</strong> Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Richardson, Carrollton, and surrounding areas.</p>
+                            <p class="service-areas"><strong>Service Areas:</strong> Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Richardson, Carrollton, and surrounding DFW areas.</p>
                             <small class="tap-hint">Tap to close</small>
                         </div>
                     </div>
@@ -1026,22 +998,21 @@
                             <span class="service-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);"><i class="fas fa-vial"></i></span>
                             <div>
                                 <h4>Chemical Balance</h4>
-                                <p>Water testing & treatment</p>
+                                <p>Expert water treatment partners</p>
                                 <small class="tap-hint">Tap for details</small>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h4>Pool Chemical Balancing DFW</h4>
-                            <p><strong>Professional water chemistry management:</strong></p>
+                            <h4>Water Chemistry Management</h4>
                             <ul>
-                                <li>Complete water testing (pH, chlorine, alkalinity, hardness)</li>
-                                <li>Chemical adjustment and balancing</li>
-                                <li>Shock treatment when needed</li>
-                                <li>Algae prevention and treatment</li>
-                                <li>Seasonal chemical adjustments</li>
-                                <li>Water quality monitoring reports</li>
+                                <li>Complete water analysis (pH, chlorine, alkalinity, hardness)</li>
+                                <li>Precise chemical adjustment and balancing</li>
+                                <li>Shock treatments for crystal clear water</li>
+                                <li>Algae prevention and treatment programs</li>
+                                <li>Seasonal chemical optimization</li>
+                                <li>Regular water quality monitoring</li>
                             </ul>
-                            <p><strong>Certified for:</strong> Texas pool chemical handling with EPA-approved products for safe swimming in Dallas-Fort Worth area pools.</p>
+                            <p class="service-areas"><strong>Certified Service:</strong> All work performed using EPA-approved products by Texas-certified pool professionals.</p>
                             <small class="tap-hint">Tap to close</small>
                         </div>
                     </div>
@@ -1052,22 +1023,21 @@
                             <span class="service-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);"><i class="fas fa-tools"></i></span>
                             <div>
                                 <h4>Equipment Repair</h4>
-                                <p>Pump, filter & heater service</p>
+                                <p>Certified repair specialists</p>
                                 <small class="tap-hint">Tap for details</small>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h4>Pool Equipment Service DFW</h4>
-                            <p><strong>Expert repair and maintenance:</strong></p>
+                            <h4>Equipment Service & Repair</h4>
                             <ul>
-                                <li>Pool pump repair and replacement</li>
-                                <li>Filter cleaning and cartridge replacement</li>
-                                <li>Pool heater service and repair</li>
-                                <li>Automation system troubleshooting</li>
-                                <li>Light fixture repair and LED upgrades</li>
-                                <li>Plumbing leak detection and repair</li>
+                                <li>Pool pump repair and replacement service</li>
+                                <li>Filter maintenance and cartridge replacement</li>
+                                <li>Heater service, repair, and optimization</li>
+                                <li>Automation system diagnosis and repair</li>
+                                <li>Pool lighting repair and LED upgrades</li>
+                                <li>Plumbing leak detection and professional repair</li>
                             </ul>
-                            <p><strong>Serving:</strong> All major pool equipment brands throughout Dallas, Plano, Frisco, Arlington, and Fort Worth areas. Licensed and insured technicians.</p>
+                            <p class="service-areas"><strong>Brand Coverage:</strong> Service for all major pool equipment brands throughout the Dallas-Fort Worth metroplex area.</p>
                             <small class="tap-hint">Tap to close</small>
                         </div>
                     </div>
@@ -1078,22 +1048,21 @@
                             <span class="service-icon" style="background: linear-gradient(135deg, #10b981, #059669);"><i class="fas fa-leaf"></i></span>
                             <div>
                                 <h4>Green Pool Recovery</h4>
-                                <p>Fast algae treatment</p>
+                                <p>Emergency cleanup experts</p>
                                 <small class="tap-hint">Tap for details</small>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h4>Green Pool Cleanup DFW</h4>
-                            <p><strong>Rapid algae treatment and pool restoration:</strong></p>
+                            <h4>Green Pool Recovery</h4>
                             <ul>
-                                <li>Comprehensive algae identification and treatment</li>
-                                <li>Shock treatment and chemical correction</li>
-                                <li>Debris removal and deep cleaning</li>
-                                <li>Filter cleaning and system optimization</li>
-                                <li>Water circulation restoration</li>
-                                <li>Follow-up treatments until crystal clear</li>
+                                <li>Professional algae identification and assessment</li>
+                                <li>Intensive shock treatment and chemical correction</li>
+                                <li>Complete debris removal and deep cleaning</li>
+                                <li>Filter system cleaning and optimization</li>
+                                <li>Water circulation system restoration</li>
+                                <li>Follow-up service until water is crystal clear</li>
                             </ul>
-                            <p><strong>Emergency service available</strong> throughout Dallas-Fort Worth metroplex. Typical green pool recovery completed in 3-7 days depending on condition.</p>
+                            <p class="service-areas"><strong>Recovery Time:</strong> Most green pools restored to crystal clear condition within 3-7 days throughout DFW.</p>
                             <small class="tap-hint">Tap to close</small>
                         </div>
                     </div>
@@ -1104,23 +1073,35 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h3 class="section-title fade-in">Why Choose DFW Pool Patrol</h3>
+            <h3 class="section-title fade-in">What You Get</h3>
             <div class="features-grid">
                 <div class="feature-card fade-in">
-                    <h4><i class="fas fa-certificate" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);"></i> Licensed & Insured</h4>
-                    <p>Professional service with full coverage</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Licensed Professionals</h4>
+                    <p>We connect you with vetted, licensed pool service professionals throughout DFW.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <h4><i class="fas fa-clock" style="background: linear-gradient(135deg, #06b6d4, #0891b2);"></i> Reliable Weekly Service</h4>
-                    <p>Same day, same time every week</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Fast Service</h4>
+                    <p>Quick response times with same-day or next-day service availability.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <h4><i class="fas fa-award" style="background: linear-gradient(135deg, #f59e0b, #d97706);"></i> Professional Grade</h4>
-                    <p>Quality equipment and chemicals</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Top-Rated Pros</h4>
+                    <p>Connect with the highest-rated pool service professionals in your area.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <h4><i class="fas fa-phone-alt" style="background: linear-gradient(135deg, #ef4444, #dc2626);"></i> Emergency Response</h4>
-                    <p>Quick fixes when problems arise</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Local Experts</h4>
+                    <p>DFW-based professionals who understand Texas pool care needs.</p>
                 </div>
             </div>
         </div>
@@ -1128,19 +1109,22 @@
 
     <section id="results" class="results">
         <div class="container">
-            <h3 class="section-title fade-in">Our Track Record</h3>
+            <h3 class="section-title fade-in">What We Deliver</h3>
             <div class="results-grid">
-                <div class="result-card fade-in">
-                    <div class="result-number">250+</div>
-                    <div class="result-label">Pools Serviced</div>
+                <div class="result-item fade-in">
+                    <div class="result-number">24/7</div>
+                    <h4>Availability</h4>
+                    <p>Connect with professionals anytime for emergency pool services</p>
                 </div>
-                <div class="result-card fade-in">
-                    <div class="result-number">3</div>
-                    <div class="result-label">Years Experience</div>
+                <div class="result-item fade-in">
+                    <div class="result-number">Same Day</div>
+                    <h4>Service Available</h4>
+                    <p>Get matched with pros who offer rapid response for urgent needs</p>
                 </div>
-                <div class="result-card fade-in">
+                <div class="result-item fade-in">
                     <div class="result-number">100%</div>
-                    <div class="result-label">Satisfaction Rate</div>
+                    <h4>Guaranteed Results</h4>
+                    <p>Satisfaction guaranteed through our network of quality professionals</p>
                 </div>
             </div>
         </div>
@@ -1148,8 +1132,8 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h3 class="section-title fade-in">Get Your Free Pool Service Estimate</h3>
-            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Serving Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Garland, Mesquite, Richardson, Carrollton, Lewisville, Allen, Flower Mound, Coppell, Grapevine, Euless, Bedford, Hurst, and all surrounding DFW Metroplex areas. Licensed and insured pool professionals.</p>
+            <h3 class="section-title fade-in">Get Connected with Pool Professionals</h3>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">DFW Pool Patrol connects homeowners with vetted pool service professionals throughout Dallas, Fort Worth, Plano, Frisco, McKinney, Irving, Arlington, Garland, Mesquite, Richardson, Carrollton, Lewisville, Allen, Flower Mound, Coppell, Grapevine, Euless, Bedford, Hurst, and all surrounding DFW Metroplex areas.</p>
             <form class="contact-form fade-in">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
@@ -1160,7 +1144,7 @@
                     <input type="tel" name="phone" placeholder="Phone Number" required>
                 </div>
                 <textarea name="message" placeholder="Tell us about your pool: size, current condition, service frequency needed, any problems..." rows="5" required></textarea>
-                <button type="submit">Get Your Free Estimate</button>
+                <button type="submit">Connect Me with Professionals</button>
             </form>
         </div>
     </section>
@@ -1168,8 +1152,8 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 DFW Pool Patrol. All rights reserved.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.85em; color: #94a3b8;">Licensed Pool Service Professionals | Dallas • Fort Worth • Plano • Frisco • McKinney • Irving • Arlington • Richardson • Carrollton<br>
-Call (762) 533-5458 for pool cleaning, maintenance, and repair services throughout DFW Metroplex</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85em; color: #94a3b8;">Connecting Pool Owners with Licensed Professionals | Dallas • Fort Worth • Plano • Frisco • McKinney • Irving • Arlington • Richardson • Carrollton<br>
+Call (762) 533-5458 to get connected with pool service professionals throughout DFW Metroplex</p>
         </div>
     </footer>
 
@@ -1235,12 +1219,12 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
             const userAgent = navigator.userAgent;
             const isMobile = /Mobile|Android|iPhone|iPad/.test(userAgent);
             
-            const notificationBody = 'NEW DFW POOL LEAD\n\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + (address ? '\nAddress: ' + address : '') + '\nMessage: ' + message + '\n\nLEAD INFO\nTime: ' + timestamp + '\nSource: ' + referrer + '\nDevice: ' + (isMobile ? 'Mobile' : 'Desktop') + '\nPage: Pool Service Website';
+            const notificationBody = 'NEW DFW POOL CONNECTION REQUEST\n\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + (address ? '\nAddress: ' + address : '') + '\nMessage: ' + message + '\n\nLEAD INFO\nTime: ' + timestamp + '\nSource: ' + referrer + '\nDevice: ' + (isMobile ? 'Mobile' : 'Desktop') + '\nPage: Pool Connection Service';
             
             fetch('https://ntfy.sh/pool_lead', {
                 method: 'POST',
                 headers: {
-                    'Title': 'DFW Pool Service Lead',
+                    'Title': 'DFW Pool Connection Request',
                     'Priority': 'high',
                     'Tags': 'pool,dfw,lead,money'
                 },
@@ -1256,7 +1240,7 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
                 });
             }
             
-            this.innerHTML = '<div class="thank-you-message"><h3>Thank You!</h3><p>Your request has been received. We\'ll contact you within 24 hours with your free estimate.</p><p><strong>Need immediate help?</strong><br>Call or text: <a href="tel:+17625335458" style="color: #1e40af; font-weight: bold;">(762) 533-5458</a></p></div>';
+            this.innerHTML = '<div class="thank-you-message"><h3>Thank You!</h3><p>Your request has been received. We\'ll contact you within 24 hours to connect you with qualified pool professionals in your area.</p><p><strong>Need immediate help?</strong><br>Call or text: <a href="tel:+17625335458" style="color: #1e40af; font-weight: bold;">(762) 533-5458</a></p></div>';
         });
         
         // Minimal page view tracking (async)
@@ -1342,16 +1326,6 @@ Call (762) 533-5458 for pool cleaning, maintenance, and repair services througho
             
             // Toggle current card
             card.classList.toggle('flipped');
-            
-            // Scroll into view on mobile for better UX
-            if (window.innerWidth <= 768 && card.classList.contains('flipped')) {
-                setTimeout(() => {
-                    card.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'center' 
-                    });
-                }, 300);
-            }
         }
         
         // Close card when clicking outside (desktop)
