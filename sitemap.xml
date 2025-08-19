@@ -4,13 +4,19 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+  <url>
+    <loc>https://dfwpoolpatrol.com/</loc>
+    <lastmod>2025-08-18T23:19:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://dfwpoolpatrol.com/</loc>
-  <lastmod>2025-08-06T23:19:04+00:00</lastmod>
-</url>
-
+  <url>
+    <loc>https://dfwpoolpatrol.com/evaporation-calculator</loc>
+    <lastmod>2025-08-18T23:19:04+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
