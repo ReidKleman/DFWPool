@@ -383,6 +383,38 @@
             .nav-links {
                 display: none;
             }
+            
+            /* Mobile table fixes */
+            .price-table {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 1rem -1rem;
+            }
+            
+            .price-table table {
+                min-width: 600px;
+            }
+            
+            .price-table th,
+            .price-table td {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+            
+            .price-table th:first-child,
+            .price-table td:first-child {
+                min-width: 200px;
+                white-space: normal;
+                position: sticky;
+                left: 0;
+                background: white;
+                z-index: 1;
+            }
+            
+            .price-table th:first-child {
+                background: linear-gradient(135deg, #1e40af, #3b82f6);
+            }
         }
     </style>
 </head>

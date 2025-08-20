@@ -2,15 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://dfwpoolpatrol.com/</loc>
-        <lastmod>2025-08-19</lastmod>
+        <lastmod>2025-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- High Priority Service Pages (Money-Making Pages) -->
+    <url>
+        <loc>https://dfwpoolpatrol.com/flower-mound-pool-service/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/grapevine-pool-service/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/allen-pool-service/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/lewisville-pool-service/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/richardson-pool-service/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/weekly-pool-cleaning-dfw/</loc>
+        <lastmod>2025-08-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Community & Utility Pages -->
     <url>
         <loc>https://dfwpoolpatrol.com/dfw-community-pools/</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/evaporation-calculator/</loc>
+        <lastmod>2025-08-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/dallas-pool-cost/</loc>

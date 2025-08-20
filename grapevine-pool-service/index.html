@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grapevine Pool Service | Expert Pool Care Connections | DFW Pool Patrol</title>
+    <meta name="description" content="Connect with Grapevine's top-rated pool service professionals. We match homeowners with trusted local pool care experts for maintenance, cleaning, and repairs.">
+    <meta name="keywords" content="grapevine pool service, pool cleaning grapevine, pool maintenance, pool repair, pool care professionals">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Grapevine Pool Service | Expert Pool Care Connections">
+    <meta property="og:description" content="Connect with Grapevine's most trusted pool service professionals for maintenance, cleaning, and repairs.">
+    <meta property="og:url" content="https://dfwpool.com/grapevine-pool-service/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Grapevine Pool Service | Expert Pool Care Connections">
+    <meta name="twitter:description" content="Connect with Grapevine's most trusted pool service professionals for maintenance, cleaning, and repairs.">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dfwpool.com/grapevine-pool-service/">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .logo i {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            color: #4facfe;
+        }
+        
+        .phone-header {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #764ba2;
+            text-decoration: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fff, #f8f9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-height: 60px;
+            box-sizing: border-box;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+        }
+        
+        .service-card i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Why Choose Section */
+        .why-choose {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8ebff 100%);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .benefit-content h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .benefit-content p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-lead {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-method {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-method i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .contact-method h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-method a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+        
+        .availability {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 2rem;
+        }
+        
+        /* Contact Form Styles */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .form-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .form-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input::placeholder, .form-textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .form-submit {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .logo {
+                justify-content: center;
+            }
+            
+            .hero {
+                text-align: center;
+                padding: 3rem 0;
+            }
+            
+            .contact-content {
+                text-align: center;
+                padding: 0 15px;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            
+            .contact-methods {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                padding: 0 10px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .contact-method {
+                margin: 0 auto 1rem auto;
+                max-width: 100%;
+            }
+            
+            .availability {
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+    
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "DFW Pool Patrol - Grapevine Pool Service",
+        "description": "Connect with Grapevine's most trusted pool service professionals for maintenance, cleaning, and repairs.",
+        "url": "https://dfwpool.com/grapevine-pool-service/",
+        "telephone": "+1-762-533-5458",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grapevine",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 32.9342,
+            "longitude": -97.0781
+        },
+        "serviceArea": {
+            "@type": "City",
+            "name": "Grapevine, TX"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Pool Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pool Cleaning"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pool Maintenance"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pool Repair"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav">
+                <div class="logo">
+                    <i class="fas fa-tint"></i>
+                    DFW Pool Patrol
+                </div>
+                <a href="tel:+17625335458" class="phone-header">
+                    <i class="fas fa-phone"></i> (762) 533-5458
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Grapevine's Premier Pool Care Connections</h1>
+            <p class="hero-subtitle">Discover trusted local pool specialists who understand Grapevine's unique water conditions and climate needs</p>
+            <div class="hero-buttons">
+                <a href="tel:+17625335458" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Get Connected Now
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-edit"></i>
+                    Request Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Specialized Pool Care Network</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-water"></i>
+                    <h3>Advanced Water Treatment</h3>
+                    <p>Match with specialists who excel in Grapevine's hard water challenges, providing customized chemical programs and water balance solutions for optimal swimming conditions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Smart Pool Technology</h3>
+                    <p>Connect with tech-savvy professionals experienced in automation systems, smart controllers, and energy-efficient equipment upgrades popular in Grapevine neighborhoods.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Specialized Repairs</h3>
+                    <p>Access certified technicians who handle complex issues like pool resurfacing, structural repairs, and equipment retrofitting with expertise in local building codes.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa & Water Feature Care</h3>
+                    <p>Find professionals specializing in spa maintenance, fountain systems, and decorative water features that complement Grapevine's upscale residential properties.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Preventive Care Programs</h3>
+                    <p>Partner with service providers offering comprehensive maintenance packages designed specifically for Grapevine's climate patterns and seasonal requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">The Grapevine Pool Care Advantage</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Certified Specialists</h4>
+                        <p>Our network includes NSPF-certified professionals with specialized training in advanced pool chemistry and equipment systems.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Grapevine Neighborhood Focus</h4>
+                        <p>Professionals familiar with local water conditions, HOA requirements, and the unique needs of Grapevine's diverse communities.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Digital Service Tracking</h4>
+                        <p>Modern professionals who provide digital service reports, photo updates, and real-time communication through mobile apps.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Excellence Recognition</h4>
+                        <p>Connect with award-winning service providers who have earned recognition from industry organizations and local chambers.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Satisfaction Commitment</h4>
+                        <p>Our matching process ensures compatibility between homeowners and service providers for long-term successful partnerships.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous relationship management to ensure your pool service experience exceeds expectations throughout the partnership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Ready to Connect with Grapevine's Best?</h2>
+                <p class="contact-lead">Get matched with certified pool professionals who understand Grapevine's unique needs.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Now</h3>
+                            <a href="tel:+17625335458">(762) 533-5458</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <h3>Quick Response</h3>
+                            <p>Same-day connections available</p>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Local Network</h3>
+                            <p>Serving all of Grapevine</p>
+                        </div>
+                        
+                        <div class="availability">
+                            <i class="fas fa-calendar-check"></i>
+                            <strong>Available 7 Days a Week</strong> • Emergency Service Available
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3 class="form-title">Find Your Pool Expert</h3>
+                        <p class="form-subtitle">Tell us about your pool needs and we'll connect you with the perfect Grapevine specialist</p>
+                        
+                        <form id="poolForm">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+                                    <input type="tel" class="form-input" name="phone" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <input type="email" class="form-input" name="email" placeholder="Email Address" required>
+                                    <input type="text" class="form-input" name="address" placeholder="Grapevine Address" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select class="form-select" name="service" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="weekly-cleaning">Weekly Pool Cleaning</option>
+                                    <option value="water-treatment">Advanced Water Treatment</option>
+                                    <option value="equipment-repair">Equipment Repair</option>
+                                    <option value="smart-technology">Smart Pool Technology</option>
+                                    <option value="spa-care">Spa & Water Feature Care</option>
+                                    <option value="preventive-care">Preventive Care Program</option>
+                                    <option value="emergency">Emergency Service</option>
+                                    <option value="consultation">Service Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-textarea" name="message" rows="4" placeholder="Tell us about your pool: size, current issues, special features, or specific requirements for your Grapevine property..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">Connect Me with Pool Experts</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DFW Pool Patrol. Connecting Grapevine homeowners with trusted pool care professionals.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission with ntfy
+        document.getElementById('poolForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Validate required fields
+            if (!data.name || !data.phone || !data.email || !data.address || !data.service || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Prepare notification message
+            const notificationMessage = `🏊 New Grapevine Pool Service Lead!
+            
+Name: ${data.name}
+Phone: ${data.phone}
+Email: ${data.email}
+Address: ${data.address}
+Service: ${data.service}
+Message: ${data.message}
+
+Source: Grapevine Pool Service Page
+Time: ${new Date().toLocaleString()}`;
+
+            try {
+                // Send notification via ntfy
+                const response = await fetch('https://ntfy.sh/dfwpool_leads', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/plain',
+                        'Title': 'New Grapevine Pool Service Lead',
+                        'Priority': 'urgent',
+                        'Tags': 'pool,grapevine,lead'
+                    },
+                    body: notificationMessage
+                });
+                
+                if (response.ok) {
+                    alert('Thank you! We\\'ve received your request and will connect you with the perfect pool professional within 24 hours.');
+                    this.reset();
+                } else {
+                    throw new Error('Failed to send notification');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Thank you for your interest! We\\'ve received your request and will contact you soon.');
+                this.reset();
+            }
+            
+            // Track form submission for analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'contact',
+                    'event_label': 'grapevine_pool_inquiry',
+                    'value': 1
+                });
+            }
+        });
+    </script>
+</body>
+</html>
