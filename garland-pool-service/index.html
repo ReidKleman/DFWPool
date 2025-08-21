@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garland Pool Service - Reliable Pool Care Professionals | DFW Pool Patrol</title>
+    <meta name="description" content="Connect with trusted Garland pool maintenance specialists. Expert weekly service, repairs, and chemical treatments. Family-owned local network. Call (469) 296-3176.">
+    <link rel="canonical" href="https://dfwpoolpatrol.com/garland-pool-service/">
+    <meta property="og:title" content="Garland Pool Service - Reliable Pool Care Professionals | DFW Pool Patrol">
+    <meta property="og:description" content="Connect with trusted Garland pool maintenance specialists. Expert weekly service, repairs, and chemical treatments. Family-owned local network. Call (469) 296-3176.">
+    <meta property="og:url" content="https://dfwpoolpatrol.com/garland-pool-service/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dfwpoolpatrol.com/images/garland-pool-service.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #2ecc71;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo i {
+            font-size: 2.2rem;
+            color: #3498db;
+        }
+
+        .contact-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .contact-header i {
+            color: #3498db;
+            font-size: 1.3rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(52, 152, 219, 0.85), rgba(46, 204, 113, 0.85)), url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 120px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: clamp(1.2rem, 2.8vw, 1.4rem);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 35px;
+            border: none;
+            border-radius: 45px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 200px;
+            justify-content: center;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
+            color: white;
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.97);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: clamp(2.2rem, 4.2vw, 3rem);
+            margin-bottom: 4rem;
+            color: #2ecc71;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .services h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 2px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 25px;
+            box-shadow: 0 12px 35px rgba(46, 204, 113, 0.08);
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(46, 204, 113, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(46, 204, 113, 0.15);
+        }
+
+        .service-card i {
+            font-size: 3.5rem;
+            color: #3498db;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #7f8c8d;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+            color: white;
+            position: relative;
+        }
+
+        .why-choose::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="20" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+        }
+
+        .why-choose .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-choose h2 {
+            text-align: center;
+            font-size: clamp(2.2rem, 4.2vw, 3rem);
+            margin-bottom: 4rem;
+            font-weight: 800;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-5px);
+        }
+
+        .feature i {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .feature h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.97);
+        }
+
+        .contact-hero {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .contact-hero h2 {
+            font-size: clamp(2.4rem, 4.5vw, 3.2rem);
+            color: #2ecc71;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .contact-hero p {
+            font-size: 1.25rem;
+            color: #7f8c8d;
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 1.5rem 2.5rem;
+            background: white;
+            border-radius: 60px;
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.12);
+            border: 2px solid rgba(46, 204, 113, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.2);
+        }
+
+        .contact-item i {
+            font-size: 1.6rem;
+            color: #3498db;
+        }
+
+        .contact-item span {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.15rem;
+        }
+
+        /* Form Styles */
+        .form-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+            padding: 4rem 3rem;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px rgba(46, 204, 113, 0.1);
+            border: 2px solid rgba(46, 204, 113, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.05rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #ecf0f1;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-group textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .hero {
+                padding: 80px 0;
+                background-attachment: scroll;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .contact-item {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .form-container {
+                padding: 3rem 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .form-container {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tint"></i>
+                    <span>DFW Pool Patrol</span>
+                </div>
+                <div class="contact-header">
+                    <i class="fas fa-phone"></i>
+                    <span>(469) 296-3176</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Garland's Trusted Pool Care Network</h1>
+            <p>Connect with Garland's most reliable pool maintenance professionals. Our family-owned network specializes in comprehensive pool care for residential neighborhoods throughout the city.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-handshake"></i>
+                    Connect Today
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-swimming-pool"></i>
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Complete Pool Services for Garland Homes</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Thorough Weekly Cleaning</h3>
+                    <p>Comprehensive weekly pool maintenance including surface skimming, debris removal, brushing, and vacuuming. Our Garland specialists ensure your pool stays crystal clear year-round with meticulous attention to detail.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Reliable Equipment Maintenance</h3>
+                    <p>Professional pump servicing, filter maintenance, and system diagnostics. Our network partners are experienced with all major pool equipment brands and provide honest, affordable repair solutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-vial"></i>
+                    <h3>Expert Chemical Management</h3>
+                    <p>Precise water testing and chemical balancing using professional-grade products. Our Garland pool specialists maintain safe, comfortable swimming conditions while protecting your pool surfaces and equipment.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Year-Round Pool Care</h3>
+                    <p>Seasonal maintenance including spring startups, fall winterization, and ongoing care adapted to North Texas weather. We understand Garland's climate and how it affects your pool throughout the year.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Quick Repair Response</h3>
+                    <p>Fast, reliable repair services for unexpected issues including equipment failures, plumbing leaks, and electrical problems. Our local network provides prompt solutions to get your pool back in working order.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Pool Improvement Services</h3>
+                    <p>Professional consultations for pool enhancements including energy-efficient equipment upgrades, lighting installations, and accessibility improvements tailored to your family's needs and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Garland Families Choose Our Network</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-home"></i>
+                    <h3>Local Family Businesses</h3>
+                    <p>Our network consists of established, family-owned pool service companies that have been serving Garland neighborhoods for years. They understand local needs and build lasting relationships with homeowners.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Honest, Fair Pricing</h3>
+                    <p>Transparent pricing with no surprise fees or high-pressure sales tactics. Our partners provide detailed estimates and work within your budget to deliver exceptional value for your pool care investment.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Dependable Service</h3>
+                    <p>Consistent, reliable service you can count on. Our network partners show up when scheduled, communicate clearly, and take pride in maintaining your pool to the highest standards week after week.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Customer Satisfaction Focus</h3>
+                    <p>Every connection comes with our commitment to your satisfaction. Our vetted professionals are dedicated to exceeding expectations and ensuring you're completely happy with your pool service experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-hero">
+                <h2>Get Connected with Garland Pool Experts</h2>
+                <p>Ready for reliable, professional pool care? We'll connect you with trusted local specialists who understand Garland pools and deliver consistent, quality service.</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(469) 296-3176</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Serving All Garland Areas</span>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Pool Address in Garland</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Service Needed</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select a service</option>
+                            <option value="weekly-cleaning">Weekly Pool Cleaning</option>
+                            <option value="equipment-repair">Equipment Repair</option>
+                            <option value="chemical-service">Chemical Balancing</option>
+                            <option value="seasonal-care">Seasonal Care</option>
+                            <option value="quick-repair">Emergency Repair</option>
+                            <option value="pool-improvements">Pool Improvements</option>
+                            <option value="free-estimate">Free Estimate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell Us About Your Pool</label>
+                        <textarea id="message" name="message" placeholder="Describe your pool, any current issues, or specific service needs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Connect Me with Pool Professionals
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DFW Pool Patrol. Connecting Garland homeowners with trusted, reliable pool service professionals.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing Request...';
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                // Create notification message
+                const notificationMessage = `🏊 New Garland Pool Service Lead!
+
+📋 Contact Information:
+• Name: ${data.firstName} ${data.lastName}
+• Email: ${data.email}
+• Phone: ${data.phone}
+• Address: ${data.address}
+
+🔧 Service Type: ${data.serviceType}
+
+💬 Additional Details: ${data.message || 'No additional information provided'}
+
+🕒 Submission Time: ${new Date().toLocaleString()}
+📍 Source: Garland Pool Service Page`;
+
+                // Send to ntfy
+                const response = await fetch('https://ntfy.sh/dfwpool_leads', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/plain',
+                        'Title': 'New Garland Pool Service Lead',
+                        'Priority': 'urgent',
+                        'Tags': 'pool,garland,lead,service'
+                    },
+                    body: notificationMessage
+                });
+
+                if (response.ok) {
+                    // Success state
+                    submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Request Sent Successfully!';
+                    submitBtn.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Show success message
+                    alert('Thank you! We\'ve received your request and will connect you with qualified Garland pool service professionals within 24 hours. For immediate assistance, please call (469) 296-3176.');
+                    
+                } else {
+                    throw new Error('Submission failed');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please try again or call (469) 296-3176';
+                submitBtn.style.background = 'linear-gradient(45deg, #e74c3c, #c0392b)';
+            }
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(45deg, #2ecc71, #27ae60)';
+            }, 3000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

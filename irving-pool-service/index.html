@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irving Pool Service - Professional Pool Care Specialists | DFW Pool Patrol</title>
+    <meta name="description" content="Connect with Irving's top-rated pool maintenance professionals. Comprehensive weekly service, equipment repairs, and water treatment. Serving all Irving neighborhoods. Call (469) 296-3176.">
+    <link rel="canonical" href="https://dfwpoolpatrol.com/irving-pool-service/">
+    <meta property="og:title" content="Irving Pool Service - Professional Pool Care Specialists | DFW Pool Patrol">
+    <meta property="og:description" content="Connect with Irving's top-rated pool maintenance professionals. Comprehensive weekly service, equipment repairs, and water treatment. Serving all Irving neighborhoods. Call (469) 296-3176.">
+    <meta property="og:url" content="https://dfwpoolpatrol.com/irving-pool-service/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dfwpoolpatrol.com/images/irving-pool-service.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.65;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            padding: 1.3rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ff6b6b;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo i {
+            font-size: 2.4rem;
+            color: #4ecdc4;
+        }
+
+        .contact-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 800;
+            color: #1a1a1a;
+            font-size: 1.2rem;
+        }
+
+        .contact-header i {
+            color: #ff6b6b;
+            font-size: 1.4rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 107, 107, 0.8), rgba(78, 205, 196, 0.8)), url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 130px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            margin-bottom: 2rem;
+            font-weight: 900;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: clamp(1.3rem, 3vw, 1.5rem);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            min-width: 220px;
+            justify-content: center;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 120px 0;
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+            margin-bottom: 5rem;
+            color: #2c3e50;
+            font-weight: 900;
+            position: relative;
+            font-family: 'Georgia', serif;
+        }
+
+        .services h2::after {
+            content: '◊';
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #ff6b6b;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 15px 50px rgba(255, 107, 107, 0.08);
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px) rotateX(2deg);
+            box-shadow: 0 30px 70px rgba(255, 107, 107, 0.15);
+            border-color: rgba(255, 107, 107, 0.2);
+        }
+
+        .service-card i {
+            font-size: 4rem;
+            color: #ff6b6b;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover i {
+            transform: scale(1.1) rotateY(180deg);
+            color: #4ecdc4;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            font-weight: 800;
+            font-family: 'Georgia', serif;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-choose::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-30px, -30px) rotate(120deg); }
+            66% { transform: translate(30px, -60px) rotate(240deg); }
+        }
+
+        .why-choose .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-choose h2 {
+            text-align: center;
+            font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+            margin-bottom: 5rem;
+            font-weight: 900;
+            font-family: 'Georgia', serif;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 25px;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-8px);
+            border-color: rgba(255, 107, 107, 0.3);
+        }
+
+        .feature i {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #4ecdc4;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .contact-hero {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        .contact-hero h2 {
+            font-size: clamp(2.6rem, 4.8vw, 3.6rem);
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-weight: 900;
+            font-family: 'Georgia', serif;
+        }
+
+        .contact-hero p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 2rem 3rem;
+            background: white;
+            border-radius: 75px;
+            box-shadow: 0 10px 35px rgba(255, 107, 107, 0.15);
+            border: 3px solid rgba(255, 107, 107, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(255, 107, 107, 0.25);
+            border-color: rgba(255, 107, 107, 0.3);
+        }
+
+        .contact-item i {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+        }
+
+        .contact-item span {
+            font-weight: 800;
+            color: #2c3e50;
+            font-size: 1.25rem;
+        }
+
+        /* Form Styles */
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 5rem 4rem;
+            border-radius: 30px;
+            box-shadow: 0 25px 80px rgba(255, 107, 107, 0.1);
+            border: 3px solid rgba(255, 107, 107, 0.05);
+            position: relative;
+        }
+
+        .form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 30px 30px 0 0;
+        }
+
+        .form-group {
+            margin-bottom: 2.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 18px 25px;
+            border: 3px solid #f8f9fa;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff6b6b;
+            background: white;
+            box-shadow: 0 0 0 5px rgba(255, 107, 107, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-group textarea {
+            height: 160px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 22px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .hero {
+                padding: 100px 0;
+                background-attachment: scroll;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .contact-item {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .form-container {
+                padding: 3rem 2.5rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .form-container {
+                padding: 2.5rem 2rem;
+            }
+
+            .btn {
+                min-width: 180px;
+                padding: 16px 30px;
+                font-size: 0.9rem;
+            }
+
+            .cta-buttons {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tint"></i>
+                    <span>DFW Pool Patrol</span>
+                </div>
+                <div class="contact-header">
+                    <i class="fas fa-phone"></i>
+                    <span>(469) 296-3176</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Irving's Premier Pool Service Specialists</h1>
+            <p>Experience exceptional pool care through our network of Irving's most skilled and dedicated pool maintenance professionals. Quality service, reliability, and customer satisfaction guaranteed.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-star"></i>
+                    Get Premium Service
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Premium Pool Services in Irving</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Elite Weekly Pool Service</h3>
+                    <p>Comprehensive weekly pool maintenance featuring professional-grade skimming, vacuuming, brushing, and detailed equipment inspections. Our Irving specialists deliver consistent, high-quality care that keeps your pool pristine week after week.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Advanced Equipment Solutions</h3>
+                    <p>Expert diagnosis and repair of pool pumps, filters, heaters, and automation systems. Our certified technicians work with all major brands and provide reliable solutions that maximize equipment lifespan and efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Professional Water Management</h3>
+                    <p>Precision chemical testing and balancing using commercial-grade products and equipment. Our water chemistry experts ensure optimal pH, alkalinity, and sanitizer levels for safe, comfortable swimming conditions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Complete Seasonal Care</h3>
+                    <p>Expert spring openings, fall closings, and year-round seasonal adjustments tailored to Irving's climate. Our professionals understand North Texas weather patterns and protect your investment through every season.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Pool Services</h3>
+                    <p>Rapid response for urgent pool problems including green water recovery, equipment failures, and leak detection. Our emergency network provides priority service to restore your pool quickly and efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Pool Enhancement Services</h3>
+                    <p>Professional consultations for pool upgrades including LED lighting systems, salt water conversions, energy-efficient equipment, and smart pool automation tailored to enhance your swimming experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2>The Irving Pool Service Advantage</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Professionals</h3>
+                    <p>Our network consists exclusively of licensed, insured, and certified pool service professionals with extensive training and years of experience serving Irving's diverse pool types and neighborhoods.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Reliable Scheduling</h3>
+                    <p>Consistent, on-time service you can depend on. Our professionals maintain regular schedules and communicate proactively about any changes or special maintenance needs your pool may require.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Personalized Service</h3>
+                    <p>Every pool is unique, and our professionals take time to understand your specific needs, preferences, and budget. You'll receive customized care that fits your lifestyle and pool requirements perfectly.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Satisfaction Guaranteed</h3>
+                    <p>Your complete satisfaction is our top priority. Every service connection includes our quality assurance commitment, ensuring you receive exceptional pool care that exceeds your expectations every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-hero">
+                <h2>Connect with Irving Pool Experts</h2>
+                <p>Ready to experience the difference that professional pool care makes? Let us connect you with Irving's finest pool service specialists who are committed to keeping your pool perfect.</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(469) 296-3176</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>All Irving Neighborhoods</span>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Pool Address in Irving</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Service Interest</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select preferred service</option>
+                            <option value="weekly-service">Weekly Pool Service</option>
+                            <option value="equipment-repair">Equipment Repair</option>
+                            <option value="water-management">Water Chemistry</option>
+                            <option value="seasonal-care">Seasonal Care</option>
+                            <option value="emergency-service">Emergency Service</option>
+                            <option value="pool-enhancement">Pool Enhancements</option>
+                            <option value="consultation">Professional Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pool Details & Special Requests</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your pool, any existing issues, or specific service preferences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Connect Me with Pool Specialists
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DFW Pool Patrol. Connecting Irving homeowners with premier pool service professionals since 2020.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting You...';
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                // Create notification message
+                const notificationMessage = `🏊‍♀️ New Irving Pool Service Lead!
+
+📋 Contact Information:
+• Name: ${data.firstName} ${data.lastName}
+• Email: ${data.email}
+• Phone: ${data.phone}
+• Address: ${data.address}
+
+🔧 Service Interest: ${data.serviceType}
+
+💬 Pool Details: ${data.message || 'No additional details provided'}
+
+🕒 Submitted: ${new Date().toLocaleString()}
+📍 Source: Irving Pool Service Page`;
+
+                // Send to ntfy
+                const response = await fetch('https://ntfy.sh/dfwpool_leads', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/plain',
+                        'Title': 'New Irving Pool Service Lead',
+                        'Priority': 'urgent',
+                        'Tags': 'pool,irving,lead,premium'
+                    },
+                    body: notificationMessage
+                });
+
+                if (response.ok) {
+                    // Success state
+                    submitBtn.innerHTML = '<i class="fas fa-check-double"></i> Successfully Connected!';
+                    submitBtn.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Show success message
+                    alert('Excellent! We\'ve received your request and will connect you with qualified Irving pool service professionals within 24 hours. For immediate assistance, please call (469) 296-3176.');
+                    
+                } else {
+                    throw new Error('Connection failed');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please try again or call (469) 296-3176';
+                submitBtn.style.background = 'linear-gradient(45deg, #e74c3c, #c0392b)';
+            }
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)';
+            }, 3000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
