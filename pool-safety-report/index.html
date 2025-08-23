@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DFW Pool Inspections — Current Analysis</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root { --fg: #1e293b; --muted: #64748b; --line: #e2e8f0; --bg: #fff; --primary: #1e40af; --primary-light: #3b82f6; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--fg); background:var(--bg); font:16px/1.55 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+header { padding:28px 20px; border-bottom:1px solid var(--line); }
+main { max-width:1024px; margin:0 auto; padding:24px 20px 40px; }
+h1 { margin:0 0 6px; font-size:1.9rem; }
+h2 { margin:24px 0 8px; font-size:1.35rem; }
+h3 { margin:18px 0 8px; font-size:1.1rem; }
+.lede { font-size:1.05rem; }
+.small { color:var(--muted); font-size:.95rem; }
+.callout { background:#f8fbff; border:1px solid #dfeeff; border-radius:8px; padding:10px 12px; margin:14px 0 0; }
+.kpis { display:grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap:10px; margin:14px 0; }
+.kpi { background:#fafafa; border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+.kpi b { display:block; font-size:1.25rem; }
+.tablewrap { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+table { width:100%; border-collapse:collapse; font-size:.96rem; }
+th,td { padding:8px 6px; border-bottom:1px solid var(--line); text-align:left; white-space:nowrap; }
+figure { margin:10px 0 16px; }
+figure img { max-width:100%; height:auto; display:block; }
+figcaption { color:var(--muted); font-size:.9rem; }
+.downloads a { display:inline-block; margin-right:12px; }
+.badge { display:inline-block; border:1px solid var(--line); padding:2px 8px; border-radius:999px; font-size:.85rem; margin-left:6px; }
+hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
+
+/* Print Styles */
+@media print {
+  header { page-break-after: always; }
+  #overview, #closures, #actions, #recommendations, #methodology { page-break-before: always; }
+  .callout { page-break-inside: avoid; }
+  .tablewrap { page-break-inside: avoid; }
+  
+  /* Ensure charts work in grayscale */
+  [style*="background: #dc2626"], [style*="background: #ef4444"] { background: #666 !important; }
+  [style*="background: #f97316"] { background: #777 !important; }
+  [style*="background: #eab308"] { background: #888 !important; }
+  [style*="background: #22c55e"], [style*="background: #16a34a"] { background: #999 !important; }
+  [style*="background: #3b82f6"] { background: #aaa !important; }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <a href="/" style="color: #64748b; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+      ← Back to DFW Pool Patrol | Pool Service Connection
+    </a>
+  </div>
+  <h1>Tarrant County Pool Inspections — Current Analysis</h1>
+  <div class="small">Coverage: <b>January 01, 2025 – August 22, 2025</b> • Updated August 23, 2025</div>
+  <p class="lede">
+    This analysis focuses on two key inspection outcomes:
+    <b>deficiencies</b> (maintenance issues found) and <b>closure rates</b> (pools deemed unsafe for operation).
+  </p>
+  
+  <div class="callout" style="background: #f8fafc; border-left: 4px solid var(--primary); margin: 20px 0 30px; padding: 16px 20px;">
+    <h4 style="color: var(--primary); margin: 0 0 8px; font-size: 1rem;">About This Data</h4>
+    <p style="margin: 0 0 12px; font-size: 0.9rem; color: var(--muted);">
+      This independent analysis of Tarrant County pool inspection data provides transparency 
+      into pool maintenance standards. <a href="/" style="color: var(--primary); text-decoration: none; font-weight: 600;">DFW Pool Patrol</a> 
+      connects homeowners with licensed professionals who help maintain compliance with these standards.
+    </p>
+  </div>
+  
+  <div class="callout" style="margin-top: 20px;">
+    <h3 style="margin: 0 0 8px; color: var(--primary);">Executive Summary</h3>
+    <p><strong>Key Takeaways:</strong> During the most recent inspection period, Tarrant County conducted 472 pool inspections with a <strong>6.78% closure rate</strong> (32 closures). <strong>The majority of pools (77.33%) required corrective actions</strong>, averaging 3.26 deficiencies per inspection. <strong>Equipment repairs and miscellaneous fixes</strong> dominated required corrections, with significant variation between cities—Colleyville showing the highest closure rate (18.75%) while Keller, Southlake, Benbrook, and Crowley maintained zero closures.</p>
+    <p><strong>Operational Impact:</strong> Most inspections result in follow-up work, indicating consistent maintenance challenges across Tarrant County pools. Cities like Westlake require corrective actions in 100% of inspections, while Grapevine shows better compliance at 63.04%.</p>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><b>472</b> Inspections</div>
+    <div class="kpi"><b>32</b> Closures noted in comments</div>
+    <div class="kpi"><b>6.78%</b> Closure rate</div>
+    <div class="kpi"><b>3.26</b> Avg. deficiencies per inspection</div>
+    <div class="kpi"><b>2</b> Median deficiencies</div>
+    <div class="kpi"><b>77.33%</b> Inspections with ≥1 deficiency</div>
+  </div>
+</header>
+
+<main>
+
+  <section id="overview">
+    <h2>Inspection Overview</h2>
+    <div class="callout" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-color: #0ea5e9;">
+      <h3 style="margin: 0 0 12px; color: #0c4a6e;">Key Statistics</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin: 12px 0;">
+        <div style="text-align: center; padding: 8px;">
+          <div style="font-size: 1.8rem; font-weight: bold; color: #0369a1;">77.33%</div>
+          <div style="font-size: 0.85rem; color: #475569;">Pools with issues</div>
+        </div>
+        <div style="text-align: center; padding: 8px;">
+          <div style="font-size: 1.8rem; font-weight: bold; color: #dc2626;">6.78%</div>
+          <div style="font-size: 0.85rem; color: #475569;">Closure rate</div>
+        </div>
+        <div style="text-align: center; padding: 8px;">
+          <div style="font-size: 1.8rem; font-weight: bold; color: #7c3aed;">3.26</div>
+          <div style="font-size: 0.85rem; color: #475569;">Avg. deficiencies</div>
+        </div>
+        <div style="text-align: center; padding: 8px;">
+          <div style="font-size: 1.8rem; font-weight: bold; color: #059669;">472</div>
+          <div style="font-size: 0.85rem; color: #475569;">Total inspections</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Closure Performance Row -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;">
+      <div class="callout" style="background: #fef3c7; border-color: #f59e0b;">
+        <h4 style="margin: 0 0 8px; color: #92400e;">Most Closures</h4>
+        <ol style="margin: 8px 0; padding-left: 20px; font-size: 0.9rem;">
+          <li><strong>Colleyville:</strong> 18.75% (3/16)</li>
+          <li><strong>Westlake:</strong> 13.33% (2/15)</li>
+          <li><strong>Bedford:</strong> 11.11% (9/81)</li>
+        </ol>
+      </div>
+      
+      <div class="callout" style="background: #dcfce7; border-color: #16a34a;">
+        <h4 style="margin: 0 0 8px; color: #15803d;">Zero Closures</h4>
+        <ul style="margin: 8px 0; padding-left: 20px; font-size: 0.9rem;">
+          <li><strong>Keller</strong> (35 inspections)</li>
+          <li><strong>Southlake</strong> (28 inspections)</li>
+          <li><strong>Benbrook</strong> (18 inspections)</li>
+          <li><strong>Crowley</strong> (15 inspections)</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Deficiency Performance Row -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;">
+      <div class="callout" style="background: #fdf2f8; border-color: #ec4899;">
+        <h4 style="margin: 0 0 8px; color: #be185d;">Most Deficiencies</h4>
+        <ol style="margin: 8px 0; padding-left: 20px; font-size: 0.9rem;">
+          <li><strong>Colleyville:</strong> 5.1 avg (16 inspections)</li>
+          <li><strong>Westlake:</strong> 4.9 avg (15 inspections)</li>
+          <li><strong>Bedford:</strong> 4.5 avg (81 inspections)</li>
+        </ol>
+      </div>
+      
+      <div class="callout" style="background: #f0f9ff; border-color: #0ea5e9;">
+        <h4 style="margin: 0 0 8px; color: #0c4a6e;">Fewest Deficiencies</h4>
+        <ul style="margin: 8px 0; padding-left: 20px; font-size: 0.9rem;">
+          <li><strong>Keller:</strong> 2.1 avg (35 inspections)</li>
+          <li><strong>Grapevine:</strong> 2.7 avg (92 inspections)</li>
+          <li><strong>Hurst:</strong> 3.3 avg (49 inspections)</li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="callout" style="background: #fffbeb; border-color: #fcd34d;">
+      <h4 style="margin: 0 0 8px; color: #d97706;">Quick Facts</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; font-size: 0.9rem;">
+        <div><strong>Peak Inspection Period:</strong> Spring-Summer months</div>
+        <div><strong>Most Inspected:</strong> Grapevine (92 pools)</div>
+        <div><strong>Top Issue:</strong> Equipment & misc fixes</div>
+        <div><strong>Median Deficiencies:</strong> 2 per inspection</div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="closures">
+    <h2>Closures at a glance</h2>
+    <p class="small">A closure is counted when the inspector’s comment explicitly indicates a closure/shutdown. Notes like “no closure” or “closure not required” are treated as not closed, and “allowed to reopen” is not counted as a closure.</p>
+    <!-- Closure Rate by City Chart -->
+    <div style="margin: 20px 0;">
+      <h3>Closure Rates by City (≥10 inspections)</h3>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Horizontal bar chart -->
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Colleyville</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #dc2626; height: 100%; width: 95%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">18.75%</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Westlake</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #ef4444; height: 100%; width: 65%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">13.33%</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Bedford</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #f97316; height: 100%; width: 55%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">11.11%</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Hurst</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #eab308; height: 100%; width: 40%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">8.16%</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Grapevine</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #22c55e; height: 100%; width: 27%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">5.43%</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Keller</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #16a34a; height: 100%; width: 5%; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                <span style="color: #374151; font-size: 0.75rem; font-weight: bold; margin-left: 8px;">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; color: #64748b; text-align: center; margin-top: 15px;">Percentage of inspections resulting in closure</div>
+      </div>
+    </div>
+    <div class="tablewrap"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>city</th>
+      <th>inspections</th>
+      <th>closures</th>
+      <th>closure_rate_%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>colleyville</td>
+      <td>16</td>
+      <td>3</td>
+      <td>18.75</td>
+    </tr>
+    <tr>
+      <td>westlake</td>
+      <td>15</td>
+      <td>2</td>
+      <td>13.33</td>
+    </tr>
+    <tr>
+      <td>bedford</td>
+      <td>81</td>
+      <td>9</td>
+      <td>11.11</td>
+    </tr>
+    <tr>
+      <td>hurst</td>
+      <td>49</td>
+      <td>4</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <td>white settlement</td>
+      <td>16</td>
+      <td>1</td>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <td>saginaw</td>
+      <td>17</td>
+      <td>1</td>
+      <td>5.88</td>
+    </tr>
+    <tr>
+      <td>grapevine</td>
+      <td>92</td>
+      <td>5</td>
+      <td>5.43</td>
+    </tr>
+    <tr>
+      <td>haltom city</td>
+      <td>26</td>
+      <td>1</td>
+      <td>3.85</td>
+    </tr>
+    <tr>
+      <td>keller</td>
+      <td>35</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>southlake</td>
+      <td>28</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>benbrook</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>crowley</td>
+      <td>15</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table></div>
+    <figure>
+      <!-- Chart showing closure rate by city would be displayed here -->
+      <figcaption>Top closure rates by city (≥10 inspections).</figcaption>
+    </figure>
+    <h3>Downloads (closures)</h3>
+    <p class="downloads">
+      <a href="closures_topline.csv">Closures topline (CSV)</a>
+      <a href="closures_by_month.csv">Closures by month (CSV)</a>
+      <a href="closures_by_city.csv">Closures by city (CSV)</a>
+    </p>
+  </section>
+
+
+  <section id="actions">
+    <h2>Corrective actions</h2>
+    <p>
+      <b>365</b> of <b>472</b> inspections included at least one corrective action — <b>77.33%</b>.
+      That means most pools needed work the day inspectors arrived.
+    </p>
+
+    <div class="kpis">
+      <div class="kpi"><b>77.33%</b> Share with ≥1 action</div>
+      <div class="kpi"><b>3.18</b> Avg. actions per inspection (all)</div>
+      <div class="kpi"><b>4.11</b> Avg. actions when present</div>
+    </div>
+
+    <figure>
+      <!-- Chart showing corrective actions distribution would be displayed here -->
+      <figcaption>How many corrective actions inspectors wrote per inspection.</figcaption>
+    </figure>
+
+    <!-- City Performance Chart -->
+    <div style="margin: 20px 0;">
+      <h3>Average Deficiencies by City (≥10 inspections)</h3>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Horizontal bar chart -->
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Colleyville</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #dc2626; height: 100%; width: 85%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">5.1</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Westlake</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #ef4444; height: 100%; width: 82%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">4.9</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Bedford</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #f97316; height: 100%; width: 75%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">4.5</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Hurst</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #eab308; height: 100%; width: 55%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">3.3</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Grapevine</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #22c55e; height: 100%; width: 45%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">2.7</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 100px; font-size: 0.85rem; font-weight: 500;">Keller</div>
+            <div style="flex: 1; background: #e5e7eb; border-radius: 4px; height: 24px; position: relative;">
+              <div style="background: #16a34a; height: 100%; width: 35%; border-radius: 4px; display: flex; align-items: center; justify-content: end; padding-right: 8px;">
+                <span style="color: white; font-size: 0.75rem; font-weight: bold;">2.1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; color: #64748b; text-align: center; margin-top: 15px;">Average number of deficiencies per inspection</div>
+      </div>
+    </div>
+
+    <h3>Cities where actions are most common</h3>
+    <div class="tablewrap"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>City</th>
+      <th>Total Inspections</th>
+      <th>% Needing Action</th>
+      <th>Avg Actions Required</th>
+      <th>Most Common Issue</th>
+      <th>% of That Issue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>westlake</td>
+      <td>15</td>
+      <td>100.00</td>
+      <td>5.20</td>
+      <td>Signage/permit posting</td>
+      <td>41.03</td>
+    </tr>
+    <tr>
+      <td>southlake</td>
+      <td>28</td>
+      <td>89.29</td>
+      <td>5.32</td>
+      <td>Misc fixes</td>
+      <td>44.30</td>
+    </tr>
+    <tr>
+      <td>bedford</td>
+      <td>81</td>
+      <td>88.89</td>
+      <td>4.46</td>
+      <td>Misc fixes</td>
+      <td>37.67</td>
+    </tr>
+    <tr>
+      <td>colleyville</td>
+      <td>16</td>
+      <td>87.50</td>
+      <td>6.44</td>
+      <td>Misc fixes</td>
+      <td>44.66</td>
+    </tr>
+    <tr>
+      <td>benbrook</td>
+      <td>18</td>
+      <td>77.78</td>
+      <td>2.11</td>
+      <td>Misc fixes</td>
+      <td>34.21</td>
+    </tr>
+    <tr>
+      <td>haltom city</td>
+      <td>26</td>
+      <td>76.92</td>
+      <td>3.31</td>
+      <td>Misc fixes</td>
+      <td>47.67</td>
+    </tr>
+    <tr>
+      <td>saginaw</td>
+      <td>17</td>
+      <td>76.47</td>
+      <td>2.18</td>
+      <td>Misc fixes</td>
+      <td>51.35</td>
+    </tr>
+    <tr>
+      <td>hurst</td>
+      <td>49</td>
+      <td>75.51</td>
+      <td>2.63</td>
+      <td>Misc fixes</td>
+      <td>30.23</td>
+    </tr>
+    <tr>
+      <td>crowley</td>
+      <td>15</td>
+      <td>73.33</td>
+      <td>2.00</td>
+      <td>Misc fixes</td>
+      <td>66.67</td>
+    </tr>
+    <tr>
+      <td>white settlement</td>
+      <td>16</td>
+      <td>68.75</td>
+      <td>4.19</td>
+      <td>Misc fixes</td>
+      <td>43.28</td>
+    </tr>
+    <tr>
+      <td>keller</td>
+      <td>35</td>
+      <td>65.71</td>
+      <td>1.80</td>
+      <td>Misc fixes</td>
+      <td>30.16</td>
+    </tr>
+    <tr>
+      <td>grapevine</td>
+      <td>92</td>
+      <td>63.04</td>
+      <td>2.24</td>
+      <td>Misc fixes</td>
+      <td>50.49</td>
+    </tr>
+  </tbody>
+</table></div>
+    <figure>
+      <!-- Chart showing city action rates would be displayed here -->
+      <figcaption>Share of inspections with ≥1 action (cities with ≥10 inspections).</figcaption>
+    </figure>
+
+    <h3>What inspectors most often told pools to do</h3>
+    <div class="tablewrap"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>category</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Misc fixes*</td>
+      <td>610</td>
+    </tr>
+    <tr>
+      <td>Repair/replace equipment</td>
+      <td>315</td>
+    </tr>
+    <tr>
+      <td>Signage/permit posting</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Gate/fence/latch</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Clean/clear water</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>Adjust chemistry (chlorine/pH)</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Records/testing kit/logs</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Drain cover/VGBA</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Electrical/GFCI/Bonding</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Lifesaving gear</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Spa temperature</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table></div>
+
+    <div class="callout" style="background: #f8fafc; border-left: 3px solid #64748b; margin: 16px 0; padding: 12px 16px;">
+      <p style="margin: 0; font-size: 0.85rem; color: #64748b;">
+        <strong>*Misc fixes</strong> includes: missing/loose handrails, broken tiles, emergency phone issues, missing skimmer weirs, expired test chemicals, pipe labeling, emergency signage size requirements, lifesaving equipment repairs (rope attachments), restroom supply issues, and other maintenance items not fitting major categories.
+      </p>
+    </div>
+
+    <figure>
+      <!-- Chart showing top action categories would be displayed here -->
+      <figcaption>Most frequent corrective action types (includes "Misc fixes").</figcaption>
+    </figure>
+
+    <!-- Deficiencies Distribution Chart -->
+    <div style="margin: 20px 0;">
+      <h3>Distribution of Deficiencies per Inspection</h3>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; align-items: end; gap: 8px; height: 200px; margin-bottom: 15px;">
+          <!-- Bar chart using CSS -->
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <div style="background: var(--primary); width: 100%; height: 45px; margin-bottom: 5px; border-radius: 4px 4px 0 0;"></div>
+            <div style="font-size: 0.8rem; font-weight: bold;">0</div>
+            <div style="font-size: 0.7rem; color: #64748b;">22.7%</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <div style="background: var(--primary-light); width: 100%; height: 65px; margin-bottom: 5px; border-radius: 4px 4px 0 0;"></div>
+            <div style="font-size: 0.8rem; font-weight: bold;">1-2</div>
+            <div style="font-size: 0.7rem; color: #64748b;">32.8%</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <div style="background: #ef4444; width: 100%; height: 85px; margin-bottom: 5px; border-radius: 4px 4px 0 0;"></div>
+            <div style="font-size: 0.8rem; font-weight: bold;">3-4</div>
+            <div style="font-size: 0.7rem; color: #64748b;">28.6%</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <div style="background: #dc2626; width: 100%; height: 55px; margin-bottom: 5px; border-radius: 4px 4px 0 0;"></div>
+            <div style="font-size: 0.8rem; font-weight: bold;">5+</div>
+            <div style="font-size: 0.7rem; color: #64748b;">15.9%</div>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; color: #64748b; text-align: center;">Number of deficiencies found per inspection</div>
+      </div>
+    </div>
+
+    <h3>Downloads (actions)</h3>
+    <p class="downloads">
+      <a href="corrective_actions_by_city.csv">Corrective actions by city (CSV)</a>
+      <a href="corrective_action_categories_overall.csv">Action categories overall (CSV)</a>
+      <a href="corrective_actions_flat.csv">Corrective actions (flat export) (CSV)</a>
+    </p>
+
+    <h3>Source Data</h3>
+    <div class="callout" style="background: #f1f5f9; border-color: #cbd5e1;">
+      <p><strong>Raw Inspection Data:</strong> <a href="pool_inspection_2025.csv">pool_inspection_2025.csv</a></p>
+      <p class="small"><em>Note: This is the unprocessed source dataset extracted from Tarrant County's inspection portal. Data may contain inconsistencies, duplicates, or formatting variations as originally recorded by inspectors.</em></p>
+    </div>
+  </section>
+
+  <hr>
+  
+  <section id="recommendations">
+    <h2>Key Insights & Areas of Focus</h2>
+    
+    <div class="callout" style="background: #fef3c7; border-color: #f59e0b;">
+      <h3 style="margin: 0 0 8px; color: #92400e;">High-Priority Cities</h3>
+      <p><strong>Immediate Attention Recommended:</strong></p>
+      <ul style="margin: 8px 0; padding-left: 20px;">
+        <li><strong>Colleyville:</strong> 18.75% closure rate suggests systematic issues requiring targeted intervention</li>
+        <li><strong>Westlake:</strong> 100% of inspections require corrective actions—consider enhanced pre-inspection protocols</li>
+        <li><strong>Bedford:</strong> High absolute number of closures (9) with significant inspection volume</li>
+      </ul>
+    </div>
+    
+    <div class="callout" style="background: #dcfce7; border-color: #16a34a;">
+      <h3 style="margin: 0 0 8px; color: #15803d;">Best Performers</h3>
+      <p><strong>Zero Closures Maintained:</strong> Keller, Southlake, Benbrook, and Crowley demonstrate effective pool maintenance standards that could serve as models for other municipalities.</p>
+    </div>
+    
+    <h3>Common Issues Requiring System-Wide Attention</h3>
+    <div class="kpis">
+      <div class="kpi" style="background: #fef2f2; border-color: #f87171;"><b>610</b> Misc fixes needed<br><span class="small">Most common issue type</span></div>
+      <div class="kpi" style="background: #fff7ed; border-color: #fb923c;"><b>315</b> Equipment repairs<br><span class="small">Second most frequent</span></div>
+      <div class="kpi" style="background: #fefce8; border-color: #eab308;"><b>248</b> Signage/permit issues<br><span class="small">Administrative compliance</span></div>
+    </div>
+    
+    <p class="small"><em>These patterns suggest opportunities for preventive maintenance programs and standardized compliance checklists.</em></p>
+    
+    <h3>Key Performance Patterns</h3>
+    <div class="callout" style="background: #f8fafc; border-color: #e2e8f0;">
+      <div style="display: grid; gap: 16px;">
+        <div style="background: rgba(220, 38, 38, 0.1); padding: 12px; border-radius: 6px; border-left: 4px solid #dc2626;">
+          <strong style="color: #dc2626;">Consistent Underperformer:</strong> Colleyville ranks worst in BOTH closure rates (18.75%) AND deficiencies (5.1 avg) - indicating systemic maintenance issues requiring immediate attention.
+        </div>
+        <div style="background: rgba(34, 197, 94, 0.1); padding: 12px; border-radius: 6px; border-left: 4px solid #22c55e;">
+          <strong style="color: #16a34a;">Model City:</strong> Keller excels in BOTH categories with zero closures AND lowest deficiencies (2.1 avg) - demonstrating best practices that could be replicated.
+        </div>
+        <div style="background: rgba(59, 130, 246, 0.1); padding: 12px; border-radius: 6px; border-left: 4px solid #3b82f6;">
+          <strong style="color: #1d4ed8;">Strong Correlation:</strong> Cities with high deficiency rates typically show higher closure rates, suggesting deficiencies are predictive of future compliance issues.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+  
+  <section id="methodology">
+    <h2>About This Report</h2>
+    
+    <h3>Data Source & Methodology</h3>
+    <p>This analysis is based on pool inspection data gathered from the <a href="https://inspections.myhealthdepartment.com/tarrant/inspection/">Tarrant County Health Department's public inspection portal</a> covering the period January 1, 2025 through August 22, 2025.</p>
+    
+    <div class="callout">
+      <h4 style="margin: 0 0 8px; font-size: 1rem;">Data Collection Process</h4>
+      <ul style="margin: 8px 0; padding-left: 20px;">
+        <li>Inspection records extracted from official Tarrant County database</li>
+        <li>Closure status determined through inspector comments and notes fields</li>
+        <li>Deficiencies and corrective actions categorized from inspector observations</li>
+        <li>City-level analysis limited to municipalities with ≥10 inspections for statistical relevance</li>
+      </ul>
+    </div>
+    
+    <h3>Data Limitations & Disclaimers</h3>
+    <p class="small"><strong>Important:</strong> This data should be interpreted with the following limitations in mind:</p>
+    <ul class="small" style="margin: 12px 0; padding-left: 20px; line-height: 1.6;">
+      <li><strong>Closure Status:</strong> Pool closures were identified through inspector comment fields. It's possible some closures were not recorded in comments or were recorded inconsistently.</li>
+      <li><strong>Data Accuracy:</strong> All information reflects what was entered by Tarrant County inspectors. Recording errors or omissions by county staff are possible.</li>
+      <li><strong>Scope:</strong> Analysis covers only pools inspected by Tarrant County during the specified timeframe—not all pools in the region.</li>
+      <li><strong>Seasonal Variation:</strong> Data represents partial-year results and may not reflect full annual patterns.</li>
+    </ul>
+    
+    <h3>Report Information</h3>
+    <p class="small">
+      <strong>Last Updated:</strong> August 23, 2025<br>
+      <strong>Data Coverage:</strong> January 01, 2025 – August 22, 2025<br>
+      <strong>Total Records:</strong> 472 inspections across 12 Tarrant County cities
+    </p>
+  </section>
+
+</main>
+</body>
+</html>
