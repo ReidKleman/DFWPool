@@ -67,56 +67,41 @@ hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
     <b>deficiencies</b> (maintenance issues found) and <b>closure rates</b> (pools deemed unsafe for operation).
   </p>
   
-  <div class="callout" style="background: #f8fafc; border-left: 4px solid var(--primary); margin: 20px 0 30px; padding: 16px 20px;">
-    <h4 style="color: var(--primary); margin: 0 0 8px; font-size: 1rem;">About This Data</h4>
-    <p style="margin: 0 0 12px; font-size: 0.9rem; color: var(--muted);">
-      This independent analysis of Tarrant County pool inspection data provides transparency 
-      into pool maintenance standards. <a href="/" style="color: var(--primary); text-decoration: none; font-weight: 600;">DFW Pool Patrol</a> 
-      connects homeowners with licensed professionals who help maintain compliance with these standards.
-    </p>
+  <!-- Key Statistics - First Thing Visitors See -->
+  <div class="callout" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-color: #0ea5e9; margin: 20px 0;">
+    <h3 style="margin: 0 0 12px; color: #0c4a6e;">Inspection Overview</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 12px 0;">
+      <div style="text-align: center; padding: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: #059669;">472</div>
+        <div style="font-size: 0.85rem; color: #475569;">Total inspections</div>
+      </div>
+      <div style="text-align: center; padding: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: #0369a1;">77.33%</div>
+        <div style="font-size: 0.85rem; color: #475569;">Pools with issues</div>
+      </div>
+      <div style="text-align: center; padding: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: #dc2626;">6.78%</div>
+        <div style="font-size: 0.85rem; color: #475569;">Closure rate</div>
+      </div>
+      <div style="text-align: center; padding: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: #7c3aed;">3.26</div>
+        <div style="font-size: 0.85rem; color: #475569;">Avg. deficiencies</div>
+      </div>
+    </div>
   </div>
-  
-  <div class="callout" style="margin-top: 20px;">
+
+  <!-- Executive Summary -->
+  <div class="callout" style="margin: 20px 0;">
     <h3 style="margin: 0 0 8px; color: var(--primary);">Executive Summary</h3>
     <p><strong>Key Takeaways:</strong> During the most recent inspection period, Tarrant County conducted 472 pool inspections with a <strong>6.78% closure rate</strong> (32 closures). <strong>The majority of pools (77.33%) required corrective actions</strong>, averaging 3.26 deficiencies per inspection. <strong>Equipment repairs and miscellaneous fixes</strong> dominated required corrections, with significant variation between cities—Colleyville showing the highest closure rate (18.75%) while Keller, Southlake, Benbrook, and Crowley maintained zero closures.</p>
     <p><strong>Operational Impact:</strong> Most inspections result in follow-up work, indicating consistent maintenance challenges across Tarrant County pools. Cities like Westlake require corrective actions in 100% of inspections, while Grapevine shows better compliance at 63.04%.</p>
-  </div>
-
-  <div class="kpis">
-    <div class="kpi"><b>472</b> Inspections</div>
-    <div class="kpi"><b>32</b> Closures noted in comments</div>
-    <div class="kpi"><b>6.78%</b> Closure rate</div>
-    <div class="kpi"><b>3.26</b> Avg. deficiencies per inspection</div>
-    <div class="kpi"><b>2</b> Median deficiencies</div>
-    <div class="kpi"><b>77.33%</b> Inspections with ≥1 deficiency</div>
   </div>
 </header>
 
 <main>
 
   <section id="overview">
-    <h2>Inspection Overview</h2>
-    <div class="callout" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-color: #0ea5e9;">
-      <h3 style="margin: 0 0 12px; color: #0c4a6e;">Key Statistics</h3>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin: 12px 0;">
-        <div style="text-align: center; padding: 8px;">
-          <div style="font-size: 1.8rem; font-weight: bold; color: #0369a1;">77.33%</div>
-          <div style="font-size: 0.85rem; color: #475569;">Pools with issues</div>
-        </div>
-        <div style="text-align: center; padding: 8px;">
-          <div style="font-size: 1.8rem; font-weight: bold; color: #dc2626;">6.78%</div>
-          <div style="font-size: 0.85rem; color: #475569;">Closure rate</div>
-        </div>
-        <div style="text-align: center; padding: 8px;">
-          <div style="font-size: 1.8rem; font-weight: bold; color: #7c3aed;">3.26</div>
-          <div style="font-size: 0.85rem; color: #475569;">Avg. deficiencies</div>
-        </div>
-        <div style="text-align: center; padding: 8px;">
-          <div style="font-size: 1.8rem; font-weight: bold; color: #059669;">472</div>
-          <div style="font-size: 0.85rem; color: #475569;">Total inspections</div>
-        </div>
-      </div>
-    </div>
+    <h2>City Performance Analysis</h2>
     
     <!-- Closure Performance Row -->
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;">
@@ -684,8 +669,15 @@ hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
   
   <hr>
   
+  <section id="about">
+    <h2>About This Data</h2>
+    <p>This independent analysis of Tarrant County pool inspection data provides transparency into pool maintenance standards. <a href="/" style="color: var(--primary); text-decoration: none; font-weight: 600;">DFW Pool Patrol</a> connects homeowners with licensed professionals who help maintain compliance with these standards.</p>
+  </section>
+
+  <hr>
+
   <section id="methodology">
-    <h2>About This Report</h2>
+    <h2>Methodology & Technical Details</h2>
     
     <h3>Data Source & Methodology</h3>
     <p>This analysis is based on pool inspection data gathered from the <a href="https://inspections.myhealthdepartment.com/tarrant/inspection/">Tarrant County Health Department's public inspection portal</a> covering the period January 1, 2025 through August 22, 2025.</p>
