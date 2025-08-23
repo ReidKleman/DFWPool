@@ -3,7 +3,73 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>DFW Pool Inspections — Current Analysis</title>
+<title>Tarrant County Pool Safety Report (Jan 1–Aug 22, 2025)</title>
+
+<!-- SEO and Social Media Meta Tags -->
+<meta name="description" content="32 pools closed, 77% required fixes. Comprehensive analysis of Tarrant County pool inspections with city-by-city data and CSV downloads.">
+<link rel="canonical" href="https://dfwpoolpatrol.com/pool-safety-report/">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Tarrant County Pool Safety Report (Jan 1–Aug 22, 2025)">
+<meta property="og:description" content="32 pools closed, 77% required fixes. Comprehensive analysis of Tarrant County pool inspections with city-by-city data and CSV downloads.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dfwpoolpatrol.com/pool-safety-report/">
+<meta property="og:site_name" content="DFW Pool Patrol">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tarrant County Pool Safety Report (Jan 1–Aug 22, 2025)">
+<meta name="twitter:description" content="32 pools closed, 77% required fixes. Comprehensive analysis of Tarrant County pool inspections with city-by-city data and CSV downloads.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Tarrant County Pool Safety Inspection Report (Jan 1–Aug 22, 2025)",
+  "description": "Comprehensive analysis of 472 pool inspections in Tarrant County showing closure rates, deficiencies, and corrective actions by city. Includes all commercial and public pools: HOA/community pools, fitness centers, hotels, apartments, country clubs, and municipal pools.",
+  "url": "https://dfwpoolpatrol.com/pool-safety-report/",
+  "datePublished": "2025-08-23",
+  "dateModified": "2025-08-23",
+  "author": {
+    "@type": "Organization",
+    "name": "DFW Pool Patrol",
+    "url": "https://dfwpoolpatrol.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DFW Pool Patrol",
+    "url": "https://dfwpoolpatrol.com"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Tarrant County, Texas"
+  },
+  "temporalCoverage": "2025-01-01/2025-08-22",
+  "keywords": ["pool safety", "inspections", "Tarrant County", "pool closures", "deficiencies", "compliance"],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "CSV",
+      "contentUrl": "https://dfwpoolpatrol.com/pool-safety-report/pool_inspection_2025.csv",
+      "name": "Pool Inspection Raw Data 2025"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "CSV",
+      "contentUrl": "https://dfwpoolpatrol.com/pool-safety-report/closures_by_city.csv",
+      "name": "Closures by City"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "CSV",
+      "contentUrl": "https://dfwpoolpatrol.com/pool-safety-report/corrective_actions_by_city.csv",
+      "name": "Corrective Actions by City"
+    }
+  ]
+}
+</script>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,12 +108,11 @@ hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
   .callout { page-break-inside: avoid; }
   .tablewrap { page-break-inside: avoid; }
   
-  /* Ensure charts work in grayscale */
-  [style*="background: #dc2626"], [style*="background: #ef4444"] { background: #666 !important; }
-  [style*="background: #f97316"] { background: #777 !important; }
-  [style*="background: #eab308"] { background: #888 !important; }
-  [style*="background: #22c55e"], [style*="background: #16a34a"] { background: #999 !important; }
-  [style*="background: #3b82f6"] { background: #aaa !important; }
+  /* Preserve chart colors in print/PDF */
+  * { -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
+  
+  /* Ensure button doesn't appear in print */
+  button { display: none !important; }
 }
 </style>
 
@@ -59,6 +124,11 @@ hr { border:none; border-top:1px solid var(--line); margin:22px 0; }
     <a href="/" style="color: #64748b; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
       ← Back to DFW Pool Patrol | Pool Service Connection
     </a>
+    <div style="margin-top: 10px;">
+      <button onclick="window.print()" style="background: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; cursor: pointer;">
+        Download PDF Report
+      </button>
+    </div>
   </div>
   <h1>Tarrant County Pool Inspections — Current Analysis</h1>
   <div class="small">Coverage: <b>January 01, 2025 – August 22, 2025</b> • Updated August 23, 2025</div>
