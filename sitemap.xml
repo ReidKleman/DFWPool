@@ -1,99 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
     <url>
         <loc>https://dfwpoolpatrol.com/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
-    <!-- High Priority Service Pages (Money-Making Pages) -->
+    <!-- High Priority Service Pages -->
     <url>
         <loc>https://dfwpoolpatrol.com/plano-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/frisco-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/flower-mound-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/fort-worth-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/irving-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/arlington-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/carrollton-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://dfwpoolpatrol.com/garland-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/mckinney-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://dfwpoolpatrol.com/grapevine-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <loc>https://dfwpoolpatrol.com/fort-worth-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/irving-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/arlington-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/carrollton-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/garland-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- Secondary Service Pages -->
+    <url>
+        <loc>https://dfwpoolpatrol.com/allen-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dfwpoolpatrol.com/allen-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <loc>https://dfwpoolpatrol.com/flower-mound-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/grapevine-pool-service/</loc>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/lewisville-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/richardson-pool-service/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/weekly-pool-cleaning-dfw/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
-    <!-- Data & Research Pages -->
+    <!-- Data & Guide Pages -->
     <url>
         <loc>https://dfwpoolpatrol.com/pool-safety-report/</loc>
         <lastmod>2025-08-24</lastmod>
@@ -106,71 +109,79 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://dfwpoolpatrol.com/best-pool-service-dfw/</loc>
+        <lastmod>2025-08-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
     
     <!-- Community & Utility Pages -->
     <url>
         <loc>https://dfwpoolpatrol.com/dfw-community-pools/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/evaporation-calculator/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- Cost Pages -->
     <url>
         <loc>https://dfwpoolpatrol.com/dallas-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/fort-worth-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/plano-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/frisco-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/mckinney-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/irving-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/arlington-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/garland-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dfwpoolpatrol.com/carrollton-pool-cost/</loc>
-        <lastmod>2025-08-21</lastmod>
+        <lastmod>2025-08-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
