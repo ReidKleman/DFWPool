@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFW Pool Patrol Workshop</title>
+
+  <meta name="description" content="Join the DFW Pool Patrol workshop. Learn practical tips on pool care, maintenance, and equipment. RSVP to reserve your spot.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DFW Pool Patrol Workshop">
+  <meta property="og:description" content="Hands-on guidance for pool owners and managers across DFW. RSVP today.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="DFW Pool Patrol Workshop">
+  <meta property="twitter:description" content="Hands-on guidance for pool owners and managers across DFW. RSVP today.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preload" href="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=75" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Inline minimal FA icons needed -->
+  <style>
+    @font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2) format("woff2")}
+    .fas{font-family:"Font Awesome 6 Free";font-weight:900}
+    .fa-tint:before{content:"\f043"}
+    .fa-phone:before{content:"\f095"}
+    .fa-map-marker-alt:before{content:"\f3c5"}
+    .fa-clock:before{content:"\f017"}
+    .fa-list-ul:before{content:"\f0ca"}
+    .fa-user-friends:before{content:"\f500"}
+  </style>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1f2937;background:#ffffff}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    header{
+      position:fixed;top:0;left:0;right:0;z-index:50;
+      background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(0,0,0,0.05);box-shadow:0 2px 20px rgba(0,0,0,0.06)
+    }
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:700;color:#1e40af;font-size:1.2rem;text-decoration:none}
+    .logo:hover{color:#3b82f6}
+    .nav-links{display:flex;gap:18px;list-style:none}
+    .nav-links a{color:#64748b;text-decoration:none;font-weight:500}
+    .nav-links a:hover{color:#1e40af}
+
+    .hero{
+      background:
+        linear-gradient(135deg,rgba(0,0,0,0.65),rgba(30,64,175,0.35)),
+        url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=75') center/cover no-repeat;
+      color:#fff; padding:120px 0 64px; text-align:center; margin-top:56px
+    }
+    .hero h1{font-size:2rem;line-height:1.2;margin-bottom:12px;font-weight:800;text-shadow:0 2px 8px rgba(0,0,0,0.4)}
+    .hero p{max-width:680px;margin:0.5rem auto 0}
+    .cta{display:inline-block;margin-top:18px;background:linear-gradient(45deg,#1e40af,#3b82f6);color:#fff;
+      padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;box-shadow:0 6px 16px rgba(30,64,175,0.28)}
+    .cta:hover{transform:translateY(-1px)}
+
+    .section{padding:48px 0}
+    .two-col{display:grid;grid-template-columns:1fr;gap:24px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+    .card h3{font-size:1.1rem;margin-bottom:10px;color:#0f172a}
+    .meta{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+    .meta-item{display:flex;gap:10px;align-items:flex-start;color:#334155}
+    .meta-item i{display:inline-flex;width:28px;height:28px;border-radius:999px;align-items:center;justify-content:center;background:#1e40af;color:#fff;font-size:0.9rem;flex:0 0 28px}
+    ul{padding-left:18px}
+    ul li{margin:6px 0}
+
+    form .row{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+    input,textarea{
+      width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;font-size:0.95rem;background:#fff;color:#0f172a
+    }
+    button{
+      display:inline-block;background:linear-gradient(45deg,#1e40af,#3b82f6);color:#fff;border:0;border-radius:8px;
+      padding:12px 18px;font-weight:600;cursor:pointer
+    }
+    .muted{color:#64748b;font-size:0.95rem}
+
+    footer{padding:28px 0;border-top:1px solid #e5e7eb;color:#64748b;text-align:center}
+
+    @media(min-width:768px){
+      .hero h1{font-size:2.6rem}
+      .two-col{grid-template-columns:1fr 1fr}
+      .meta{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="/">
+          <span class="fas fa-tint" aria-hidden="true"></span>
+          DFW Pool Patrol
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <h1>DFW Pool Patrol Workshop</h1>
+      <p>Practical, no-fluff training for pool owners and property managers across the Dallas–Fort Worth area. Learn maintenance basics, water chemistry, and equipment best practices from seasoned pros.</p>
+      <a href="#rsvp" class="cta">Reserve Your Spot</a>
+      
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="card">
+        <h3>What You’ll Learn</h3>
+        <ul>
+          <li>Weekly care workflow: skimming, brushing, vacuuming, filters</li>
+          <li>Water chemistry essentials: pH, chlorine, alkalinity, hardness</li>
+          <li>Common issues and quick fixes: algae, cloudiness, staining</li>
+          <li>Equipment 101: pumps, heaters, automation & troubleshooting</li>
+          <li>Seasonal prep and safety checks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Event Info</h3>
+        <div class="meta">
+          <div class="meta-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <div><strong>Location</strong><br>Dallas–Fort Worth Metroplex</div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-user-friends" aria-hidden="true"></i>
+            <div><strong>Who Should Attend</strong><br>Homeowners, property managers, and community staff responsible for pool care.</div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-list-ul" aria-hidden="true"></i>
+            <div><strong>Format</strong><br>Concise instruction, demonstrations, and Q&A.</div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <div><strong>Duration</strong><br>Single-session workshop.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="agenda">
+    <div class="container two-col">
+      <div class="card">
+        <h3>Sample Agenda</h3>
+        <ul>
+          <li>Welcome & introductions</li>
+          <li>Maintenance workflow walkthrough</li>
+          <li>Water testing & balancing demo</li>
+          <li>Equipment overview and care</li>
+          <li>Common problems & prevention</li>
+          <li>Open Q&A</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What to Bring</h3>
+        <ul>
+          <li>Questions about your specific pool</li>
+          <li>Photos of equipment (optional)</li>
+          <li>Notebook or phone for notes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rsvp">
+    <div class="container two-col">
+      <div class="card">
+        <h3>RSVP</h3>
+        <p class="muted" style="margin-bottom:12px">Complete the form and we’ll confirm your spot and send details.</p>
+        <form id="rsvp-form" novalidate>
+          <div class="row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="row">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="company" placeholder="City">
+          </div>
+          <textarea name="notes" rows="5" placeholder="Anything we should know? (e.g., experience level, questions)"></textarea>
+          <div style="margin-top:12px">
+            <button type="submit">Submit RSVP</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Need Help?</h3>
+        <p class="muted">Questions about the workshop or accessibility? We’re happy to help.</p>
+        <p style="margin-top:8px"><a href="tel:+14692963176" style="text-decoration:none;color:#1e40af;font-weight:600"><span class="fas fa-phone" aria-hidden="true"></span> (469) 296-3176</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>&copy; 2025 DFW Pool Patrol. All rights reserved.</div>
+      <div style="margin-top:6px">Dallas • Fort Worth • Plano • Frisco • McKinney • Irving • Arlington • Richardson • Carrollton</div>
+    </div>
+  </footer>
+
+  <script>
+    // Header effect
+    window.addEventListener('scroll', function () {
+      const h = document.querySelector('header');
+      h.style.background = window.scrollY > 100 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.96)';
+    });
+
+    // Page view analytics (same endpoint)
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        fetch('https://ntfy.sh/pool_analytics', {
+          method: 'POST',
+          headers: {
+            'Title': 'Workshop Page View',
+            'Priority': 'low',
+            'Tags': 'analytics,view,workshop'
+          },
+          body:
+            'Page: Workshop\n' +
+            'Time: ' + new Date().toLocaleString() + '\n' +
+            'Referrer: ' + (document.referrer || 'Direct') + '\n' +
+            'Device: ' + (/Mobile|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop')
+        }).catch(() => {});
+      }, 1500);
+    });
+
+    // RSVP -> use SAME analytics endpoint, include details (no fallback)
+    (function () {
+      const form = document.getElementById('rsvp-form');
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const fd = new FormData(form);
+        const name = (fd.get('name') || '').trim();
+        const email = (fd.get('email') || '').trim();
+        const phone = (fd.get('phone') || '').trim();
+        const company = (fd.get('company') || '').trim();
+        const notes = (fd.get('notes') || '').trim();
+
+        if (!name || !email || !phone) {
+          alert('Please enter your name, email, and phone.');
+          return;
+        }
+
+        const ts = new Date().toLocaleString();
+        const referrer = document.referrer || 'Direct';
+        const isMobile = /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+
+        const body =
+          'WORKSHOP RSVP\n\n' +
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Phone: ' + phone + '\n' +
+          (company ? 'Company: ' + company + '\n' : '') +
+          (notes ? 'Notes: ' + notes + '\n' : '') +
+          '\nLEAD INFO\n' +
+          'Time: ' + ts + '\n' +
+          'Source: ' + referrer + '\n' +
+          'Device: ' + (isMobile ? 'Mobile' : 'Desktop') + '\n' +
+          'Page: Workshop';
+
+        // Same topic & header style as analytics
+        fetch('https://ntfy.sh/pool_analytics', {
+          method: 'POST',
+          headers: {
+            'Title': 'Workshop RSVP',
+            'Priority': 'high',
+            'Tags': 'rsvp,workshop,dfw'
+          },
+          body
+        }).catch(() => {});
+
+        // Swap to confirmation
+        form.innerHTML = '<div class="muted" style="text-align:center">' +
+          '<h3 style="color:#1e40af;margin-bottom:6px">Thank You!</h3>' +
+          '<p>Your RSVP has been received. We’ll follow up with details.</p>' +
+          '<p style="margin-top:10px"><strong>Questions?</strong> Call or text ' +
+          '<a href="tel:+14692963176" style="color:#1e40af;font-weight:600">(469) 296-3176</a></p>' +
+          '</div>';
+      });
+    })();
+
+    // Track phone link clicks (optional; uses dedicated topic)
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>{
+      a.addEventListener('click', ()=> {
+        fetch('https://ntfy.sh/pool_calls', {
+          method: 'POST',
+          headers: {
+            'Title': 'Phone Call Initiated',
+            'Priority': 'high',
+            'Tags': 'call,workshop'
+          },
+          body: 'Number: ' + a.href.replace('tel:','') + '\nTime: ' + new Date().toLocaleString() + '\nPage: Workshop'
+        }).catch(()=>{});
+      });
+    });
+
+    // Load full Font Awesome after load (non-critical)
+    window.addEventListener('load', function() {
+      setTimeout(function(){
+        const link = document.createElement('link');
+        link.rel='stylesheet';
+        link.href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+        link.crossOrigin='anonymous';
+        document.head.appendChild(link);
+      }, 800);
+    });
+  </script>
+</body>
+</html>
