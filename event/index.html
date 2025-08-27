@@ -232,7 +232,7 @@
           method: 'POST',
           headers: {
             'Title': 'Workshop Page View',
-            'Priority': 'low',
+            'Priority': 1,
             'Tags': 'analytics,view,workshop'
           },
           body:
@@ -286,7 +286,7 @@
           method: 'POST',
           headers: {
             'Title': 'Workshop RSVP',
-            'Priority': 'high',
+            'Priority': 5,
             'Tags': 'rsvp,workshop,dfw'
           },
           body
@@ -309,7 +309,7 @@
           method: 'POST',
           headers: {
             'Title': 'Phone Call Initiated',
-            'Priority': 'high',
+            'Priority': 5,
             'Tags': 'call,workshop'
           },
           body: 'Number: ' + a.href.replace('tel:','') + '\nTime: ' + new Date().toLocaleString() + '\nPage: Workshop'

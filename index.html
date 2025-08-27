@@ -1305,7 +1305,7 @@ Call (469) 296-3176 to get connected with pool service professionals throughout 
                 method: 'POST',
                 headers: {
                     'Title': 'DFW Pool Connection Request',
-                    'Priority': 'high',
+                    'Priority': 5,
                     'Tags': 'pool,dfw,lead,money'
                 },
                 body: notificationBody
@@ -1330,7 +1330,7 @@ Call (469) 296-3176 to get connected with pool service professionals throughout 
                     method: 'POST',
                     headers: {
                         'Title': 'Pool Website View',
-                        'Priority': 'low',
+                        'Priority': 1,
                         'Tags': 'analytics,view'
                     },
                     body: 'Page view: ' + window.location.hostname + '\nTime: ' + new Date().toLocaleString() + '\nReferrer: ' + (document.referrer || 'Direct') + '\nDevice: ' + (/Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? 'Mobile' : 'Desktop')
@@ -1358,7 +1358,7 @@ Call (469) 296-3176 to get connected with pool service professionals throughout 
                         method: 'POST',
                         headers: {
                             'Title': 'Phone Call Initiated',
-                            'Priority': 'high',
+                            'Priority': 5,
                             'Tags': 'call,conversion'
                         },
                         body: 'Phone call initiated\nNumber: ' + this.href.replace('tel:', '') + '\nTime: ' + new Date().toLocaleString() + '\nPage: Pool Service Website'
