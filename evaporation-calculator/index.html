@@ -12,7 +12,7 @@
     body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#374151; background:#f0f9ff; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
 
-    /* Header: use white/blurred style from your reference */
+    /* Header */
     header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); color:#1e3a8a; padding:12px 0; border-bottom:1px solid rgba(0,0,0,0.05); position: sticky; top:0; z-index: 10; }
     nav { display:flex; align-items:center; justify-content:space-between; }
     .logo { font-weight:700; color:#1e40af; text-decoration:none; display:flex; gap:.5rem; align-items:center; }
@@ -31,7 +31,7 @@
     .card h3 { font-size:1.1rem; color:#1e3a8a; margin-bottom:10px; }
     .btn { width:100%; background:linear-gradient(45deg,#1e40af,#3b82f6); color:#fff; border:none; border-radius:10px; padding:14px 16px; font-weight:700; cursor:pointer; }
 
-    /* Weather panel (pulled from your reference) */
+    /* Weather panel */
     .weather-info { background:#fff; padding:16px; border-radius:14px; border:1px solid rgba(59,130,246,.25); box-shadow:0 10px 30px rgba(0,0,0,.06); display:none; }
     .weather-info h3 { color:#1e3a8a; }
     .weather-grid { display:grid; grid-template-columns: repeat(2,1fr); gap:12px; margin-top:10px; }
@@ -74,7 +74,6 @@
   </style>
 </head>
 <body>
-  <!-- Header from your reference -->
   <header>
     <nav class="container">
       <a class="logo" href="https://dfwpoolpatrol.com">DFW Pool Patrol</a>
@@ -89,13 +88,13 @@
   <section class="hero">
     <div class="container">
       <h1>Pool Evaporation & Water Conservation (DFW)</h1>
-      <p class="subtitle">Estimate water loss and cut it with proven, high‑impact mitigation techniques.</p>
+      <p class="subtitle">Estimate water loss and cut it with proven, high-impact mitigation techniques.</p>
     </div>
   </section>
 
   <main id="calculator" class="container" style="padding:16px 0 32px 0;">
 
-    <!-- Weather block from your reference -->
+    <!-- Weather block -->
     <div class="weather-info" id="weather-info">
       <h3>Current Weather Conditions</h3>
       <div class="weather-grid" id="weather-grid"></div>
@@ -148,19 +147,19 @@
     </section>
 
     <section id="conserve" class="conserve accent-sky">
-      <h3>Conserve Water: High‑Impact Pool Mitigations</h3>
+      <h3>Conserve Water: High-Impact Pool Mitigations</h3>
       <div class="callout">
         <strong>Big wins:</strong> Use a cover when you’re not swimming (often 70–95% evaporation reduction). Add windbreaks, lower heat a few degrees, run water features only when you’re outside, and do a quick leak check monthly.
       </div>
       <ul>
-        <li><strong>Cover consistency:</strong> A solar or automatic cover prevents most day‑to‑day evaporation.</li>
+        <li><strong>Cover consistency:</strong> A solar or automatic cover prevents most day-to-day evaporation.</li>
         <li><strong>Wind control:</strong> Wind strips moisture from the surface. Use fences, hedges, or screens to calm the waterline.</li>
-        <li><strong>Temperature dial‑back:</strong> Drop setpoint a few °F when idle. Heat right before use, not 24/7.</li>
+        <li><strong>Temperature dial-back:</strong> Drop setpoint a few °F when idle. Heat right before use, not 24/7.</li>
         <li><strong>Water features on a schedule:</strong> Run fountains/sheers for ambiance when you’re there, not overnight.</li>
         <li><strong>Monthly leak check:</strong> Do the bucket test below.</li>
         <li><strong>Smart filtration:</strong> Backwash only when pressure rises ~8–10 PSI.</li>
         <li><strong>Mind the waterline:</strong> Keep level just high enough for skimming.</li>
-        <li><strong>Rain readiness:</strong> Let rainfall top‑off naturally where possible.</li>
+        <li><strong>Rain readiness:</strong> Let rainfall top-off naturally where possible.</li>
       </ul>
     </section>
 
@@ -170,12 +169,12 @@
       <h4>Before You Start</h4>
       <ul>
         <li>Turn <strong>autofill OFF</strong>.</li>
-        <li>Avoid high‑wind or rainy periods.</li>
+        <li>Avoid high-wind or rainy periods.</li>
         <li>Set features off during the test.</li>
       </ul>
-      <h4>Step‑by‑Step</h4>
+      <h4>Step-by-Step</h4>
       <ol>
-        <li>Fill a 5‑gal bucket with pool water and place on a step.</li>
+        <li>Fill a 5-gal bucket with pool water and place on a step.</li>
         <li>Mark levels inside bucket and on pool tile.</li>
         <li>Run pump normal schedule. Wait 24h.</li>
         <li>Measure both drops, record values & weather.</li>
@@ -185,8 +184,8 @@
       <ul>
         <li><strong>≈ equal drops:</strong> Normal evaporation.</li>
         <li><strong>Pool drop greater:</strong> Leak likely.</li>
-        <li><strong>Only when pump runs:</strong> Check pressure‑side plumbing.</li>
-        <li><strong>Only when pump off:</strong> Suspect suction‑side or shell leak.</li>
+        <li><strong>Only when pump runs:</strong> Check pressure-side plumbing.</li>
+        <li><strong>Only when pump off:</strong> Suspect suction-side or shell leak.</li>
       </ul>
     </section>
 
@@ -196,7 +195,7 @@
         <li><strong>Rule of thumb:</strong> 1 inch over 1 sq ft = 0.623 gal.</li>
         <li>15×30 ft pool ⇒ ~280 gal per inch.</li>
         <li>20×40 ft pool ⇒ ~498 gal per inch.</li>
-        <li>Hot DFW summer: ~1/4–1/2″ per day typical.</li>
+        <li>Hot DFW summer: ~1/4–1/2″ per day typical (uncovered).</li>
       </ul>
     </section>
 
@@ -214,7 +213,7 @@
       <h3>DFW Seasonal Conservation Calendar</h3>
       <ul>
         <li><strong>Summer:</strong> Keep cover on, check for leaks weekly.</li>
-        <li><strong>Spring/Fall:</strong> Re‑seal cover, service filters.</li>
+        <li><strong>Spring/Fall:</strong> Re-seal cover, service filters.</li>
         <li><strong>Winter:</strong> Covers still save water on windy days.</li>
       </ul>
     </section>
@@ -248,7 +247,7 @@
     function f2c(f){ return (f - 32) * 5/9; }
     function svpC(tc){ return 6.112 * Math.exp((17.67 * tc) / (tc + 243.5)); } // hPa; T in °C
 
-    // Weather block from your reference (simulated)
+    // Weather block (simulated, same behavior as before)
     document.getElementById('zip-code').addEventListener('input', function(){
       const zip = this.value.trim();
       if(zip.length === 5){ fetchWeatherData(zip); }
@@ -293,7 +292,7 @@
       document.getElementById('wind-speed').value = d.windSpeed;
     }
 
-    // --- Corrected evaporation calculator (ASHRAE/Carrier style) ---
+    // --- Conservative evaporation calculator with hard daily cap (<= 1.5" per day) ---
     function calculateEvaporation(){
       const A = parseFloat(document.getElementById('area').value || '0');
       const TaF = parseFloat(document.getElementById('air-temp').value || '0');
@@ -303,7 +302,7 @@
       const cover = document.getElementById('pool-cover').value;
       if(!A || !TaF || (!rh && rh!==0)) { alert('Enter surface area, air temp, and humidity.'); return; }
 
-      // Vapor pressures (converted to inHg for correlation)
+      // Vapor pressure terms
       const TaC = f2c(TaF);
       const TwC = f2c(TwF);
       const es_w = svpC(TwC);             // hPa at water temp
@@ -313,32 +312,44 @@
       const Pa = ea   / 33.8639;          // inHg
       const dP = Math.max(Pw - Pa, 0);    // driving force
 
-      // m_dot [lb/h] = A[ft²] * dP[inHg] * (0.089 + 0.0782*V[mph])
-      let m_lb_per_h = A * dP * (0.089 + 0.0782 * wind);
+      // Conservative wind handling + calibration
+      const Veff = Math.min(Math.max(wind, 0), 6); // cap wind at 6 mph for conservatism
+      const calibration = 0.65; // bias low
+
+      // m_dot [lb/h] = A[ft²] * dP[inHg] * (0.089 + 0.0782*V[mph]) * calibration
+      let m_lb_per_h = A * dP * (0.089 + 0.0782 * Veff) * calibration;
 
       // Cover residual (fraction that still evaporates)
-      let residual = 1; // none
-      if(cover === 'solar') residual = 0.3;        // ~70% reduction
-      else if(cover === 'safety') residual = 0.7;  // ~30–50% reduction
+      let residual = 1;
+      if(cover === 'solar') residual = 0.3;         // ~70% reduction
+      else if(cover === 'safety') residual = 0.7;   // ~30–50% reduction
       else if(cover === 'automatic') residual = 0.1;// ~90% reduction
       m_lb_per_h *= residual;
 
-      // Convert mass rate to volume and depth
-      const gal_day = (m_lb_per_h * 24) / 8.34;                 // 8.34 lb/gal
-      const inches_day = (gal_day * 12) / (A * 7.48);           // inches/day
+      // Convert to volume/depth
+      let gal_day = (m_lb_per_h * 24) / 8.34;                 // 8.34 lb/gal
+      let inches_day = (gal_day * 12) / (A * 7.48);           // inches/day
+
+      // HARD PHYSICAL/UX CAP: never show > 1.5" per day
+      const MAX_INCH_PER_DAY = 1.5;
+      if(inches_day > MAX_INCH_PER_DAY){
+        const scale = MAX_INCH_PER_DAY / inches_day;
+        inches_day = MAX_INCH_PER_DAY;
+        gal_day *= scale; // scale gallons consistently with depth cap
+      }
 
       const weekly  = gal_day * 7;
       const monthly = gal_day * 30;
 
       document.getElementById('results').style.display = 'block';
-      document.getElementById('res-daily').innerHTML = `<strong>Daily:</strong> ${gal_day.toFixed(0)} gal (~${inches_day.toFixed(2)}\")`;
+      document.getElementById('res-daily').innerHTML = `<strong>Daily:</strong> ${gal_day.toFixed(0)} gal (~${inches_day.toFixed(2)}")`;
       document.getElementById('res-proj').innerHTML  = `<strong>Weekly:</strong> ${weekly.toFixed(0)} gal • <strong>Monthly:</strong> ${monthly.toFixed(0)} gal`;
       const loads = Math.max(1, Math.round(weekly / 20)); // ≈20 gal per laundry load
       const tip = cover==='none' ? 'Add a cover when not swimming to cut most of this loss.' : 'Nice—your cover already cuts a large share of evaporation.';
       document.getElementById('res-tip').innerHTML = `≈ ${loads} laundry loads/week saved with a cover. ${tip}`;
     }
 
-    // Initialize with a default ZIP code like your reference
+    // Initialize with a default ZIP code (auto-fill weather)
     setTimeout(()=>{ const z=document.getElementById('zip-code'); if(z){ z.value='75201'; fetchWeatherData('75201'); } }, 800);
   </script>
 </body>
